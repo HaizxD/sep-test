@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a13"/>
+      <stop offset="0.55" stop-color="#15102a"/>
+      <stop offset="1" stop-color="#071b22"/>
+    </linearGradient>
+    <radialGradient id="g1">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+  <circle cx="250" cy="180" r="250" fill="url(#g1)"/>
+  <circle cx="960" cy="580" r="280" fill="url(#g2)"/>
+  <g stroke="#8be9fd" stroke-opacity="0.22" stroke-width="2">
+    <path d="M180 410 L360 220 L520 390 L700 170 L900 350 L1050 220"/>
+    <path d="M220 550 L410 420 L610 570 L780 430 L1010 560"/>
+    <path d="M360 220 L410 420 M520 390 L610 570 M700 170 L780 430 M900 350 L1010 560"/>
+  </g>
+  <g fill="#67e8f9">
+    <circle cx="180" cy="410" r="9"/><circle cx="360" cy="220" r="10"/><circle cx="520" cy="390" r="8"/><circle cx="700" cy="170" r="11"/><circle cx="900" cy="350" r="9"/><circle cx="1050" cy="220" r="8"/>
+  </g>
+  <g fill="#a78bfa">
+    <circle cx="220" cy="550" r="8"/><circle cx="410" cy="420" r="12"/><circle cx="610" cy="570" r="9"/><circle cx="780" cy="430" r="12"/><circle cx="1010" cy="560" r="9"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#fff">
+    <text x="80" y="100" font-size="26" font-weight="700" opacity="0.6">NEURAL SYSTEM // LIVE MAP</text>
+    <text x="80" y="680" font-size="72" font-weight="900">IDEAS → MODELS → IMPACT</text>
+  </g>
+</svg>

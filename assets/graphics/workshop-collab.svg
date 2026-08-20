@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090912"/><stop offset="1" stop-color="#151b2b"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+  <circle cx="1010" cy="120" r="220" fill="#ec4899" opacity="0.08"/>
+  <circle cx="190" cy="650" r="260" fill="#22d3ee" opacity="0.08"/>
+  <rect x="275" y="180" width="650" height="360" rx="26" fill="#0b0b14" stroke="#ffffff" stroke-opacity="0.14" stroke-width="3"/>
+  <rect x="310" y="215" width="580" height="290" rx="16" fill="url(#screen)" opacity="0.32"/>
+  <g fill="none" stroke="#d8b4fe" stroke-width="12" stroke-linecap="round" opacity="0.8">
+    <path d="M370 290 H510"/><path d="M370 345 H690"/><path d="M370 400 H600"/><path d="M370 455 H780"/>
+  </g>
+  <path d="M230 580 H970 L900 650 H300 Z" fill="#171723" stroke="#ffffff" stroke-opacity="0.12"/>
+  <g fill="#a78bfa"><circle cx="170" cy="260" r="58"/><circle cx="1030" cy="350" r="58"/></g>
+  <g fill="#0e0e17"><rect x="115" y="320" width="110" height="170" rx="38"/><rect x="975" y="410" width="110" height="170" rx="38"/></g>
+  <text x="70" y="105" fill="#fff" opacity="0.65" font-family="Arial" font-size="26" font-weight="700">COLLABORATIVE LAB</text>
+  <text x="70" y="700" fill="#fff" font-family="Arial" font-size="68" font-weight="900">BUILD TOGETHER.</text>
+</svg>

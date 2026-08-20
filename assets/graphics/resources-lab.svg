@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081118"/><stop offset="1" stop-color="#160d25"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+  <g fill="#fff" fill-opacity="0.045" stroke="#fff" stroke-opacity="0.11"><rect x="100" y="180" width="300" height="180" rx="26"/><rect x="450" y="180" width="300" height="180" rx="26"/><rect x="800" y="180" width="300" height="180" rx="26"/><rect x="275" y="405" width="300" height="180" rx="26"/><rect x="625" y="405" width="300" height="180" rx="26"/></g>
+  <g font-family="Arial" text-anchor="middle" font-weight="900"><text x="250" y="280" fill="#a78bfa" font-size="44">PROMPTS</text><text x="600" y="280" fill="#67e8f9" font-size="44">DATA</text><text x="950" y="280" fill="#d8b4fe" font-size="44">LLMs</text><text x="425" y="505" fill="#67e8f9" font-size="44">ETHICS</text><text x="775" y="505" fill="#a78bfa" font-size="44">BUILD</text></g>
+  <text x="74" y="105" fill="#fff" opacity="0.6" font-family="Arial" font-size="26" font-weight="700">RESOURCE LIBRARY</text>
+  <text x="74" y="688" fill="#fff" font-family="Arial" font-size="66" font-weight="900">LEARN FROM EVERY ANGLE.</text>
+</svg>
