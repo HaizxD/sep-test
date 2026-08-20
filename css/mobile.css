@@ -561,3 +561,30 @@
         min-height: 400px !important;
     }
 }
+
+@media (max-width: 760px) {
+    .ai-hero .hero-container {
+        padding-right: 14px !important;
+        padding-left: 14px !important;
+    }
+
+    .ai-hero .ai-hero-layout,
+    .ai-hero .title-glass {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .ai-hero .title-glass {
+        width: 100%;
+        padding-right: 22px !important;
+        padding-left: 22px !important;
+    }
+
+    .ai-hero .hero-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(32px, 10vw, 48px) !important;
+        line-height: 0.95;
+        letter-spacing: -2px !important;
+    }
+}
