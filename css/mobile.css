@@ -1,0 +1,563 @@
+@media (max-width: 1050px) {
+    .nav-container {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .nav-actions {
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .menu-btn {
+        display: grid;
+    }
+
+    .mobile-menu.open {
+        position: fixed !important;
+        top: 76px !important;
+        right: clamp(10px, 2.5vw, 24px) !important;
+        left: auto !important;
+        bottom: auto !important;
+        z-index: 1200 !important;
+        display: block !important;
+        width: min(300px, calc(100vw - 24px)) !important;
+        max-width: calc(100vw - 24px) !important;
+        max-height: calc(100dvh - 92px);
+        margin: 0 !important;
+        padding: 10px !important;
+        overflow-y: auto;
+        border: 1px solid var(--line, rgba(255, 255, 255, 0.1)) !important;
+        border-radius: 16px;
+        background: rgba(5, 5, 10, 0.98) !important;
+        box-shadow: 0 22px 55px rgba(0, 0, 0, 0.38);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
+
+    .mobile-menu a {
+        display: block;
+        width: 100%;
+        padding: 11px 13px !important;
+        border-radius: 10px;
+        color: var(--muted, #9a9aa4);
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.35;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu a:hover,
+    .mobile-menu a.active {
+        color: var(--text, #ffffff);
+        background: rgba(139, 92, 246, 0.12);
+    }
+
+    body.light-mode .mobile-menu.open {
+        border-color: rgba(15, 23, 42, 0.1) !important;
+        background: rgba(248, 250, 252, 0.98) !important;
+        box-shadow: 0 22px 55px rgba(15, 23, 42, 0.16);
+    }
+
+    body.light-mode .mobile-menu a {
+        color: #64748b;
+    }
+
+    body.light-mode .mobile-menu a:hover,
+    body.light-mode .mobile-menu a.active {
+        color: #111827;
+        background: rgba(124, 58, 237, 0.08);
+    }
+}
+
+@media (max-width: 760px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img,
+    video,
+    svg,
+    canvas,
+    iframe {
+        max-width: 100%;
+    }
+
+    .nav-container {
+        min-height: 72px;
+        padding-right: 12px !important;
+        padding-left: 14px !important;
+        gap: 8px !important;
+    }
+
+    .logo {
+        min-width: 0;
+        max-width: calc(100% - 96px) !important;
+        overflow: hidden;
+        gap: 7px;
+        font-size: 0 !important;
+        line-height: 1;
+        white-space: nowrap !important;
+    }
+
+    .logo span {
+        flex: 0 0 auto;
+        font-size: 16px !important;
+        letter-spacing: -0.5px;
+    }
+
+    .logo-mascot {
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 9px;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .icon-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .member-status {
+        display: none !important;
+    }
+
+    .mobile-menu.open {
+        top: 72px !important;
+        right: 12px !important;
+        width: min(286px, calc(100vw - 24px)) !important;
+        max-height: calc(100dvh - 84px);
+    }
+
+    .hero,
+    .section,
+    .learning-section,
+    .ai-journey,
+    .ai-project-cta {
+        max-width: 100%;
+    }
+
+    .hero {
+        min-height: 620px;
+        padding: 104px 18px 56px !important;
+    }
+
+    .hero-inner,
+    .hero-card,
+    .section-head,
+    .media-split,
+    .form-shell,
+    .challenge-layout,
+    .learning-browser,
+    .learning-workspace,
+    .assistant-shell,
+    .resource-library-grid,
+    .project-overview-grid,
+    .event-grid-2,
+    .event-grid-4 {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .hero-card {
+        padding: 30px 22px !important;
+        border-radius: 22px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(44px, 15vw, 68px) !important;
+        line-height: 0.92;
+        letter-spacing: -3px !important;
+    }
+
+    .hero p,
+    .lead-copy,
+    .section-head p {
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section {
+        padding-right: 18px !important;
+        padding-left: 18px !important;
+    }
+
+    .section h2,
+    .section-heading h2,
+    .panel-heading h3,
+    .journey-heading h2,
+    .ai-project-cta h2 {
+        max-width: 100%;
+        overflow-wrap: normal;
+    }
+
+    .grid,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .form-grid,
+    .phone-row,
+    .profile-metrics,
+    .profile-metrics-4,
+    .library-controls,
+    .assistant-shell,
+    .resource-library-grid,
+    .media-split,
+    .form-shell,
+    .challenge-layout,
+    .learning-browser,
+    .event-grid-2,
+    .event-grid-4,
+    .showcase-grid,
+    .two-col-grid,
+    .image-card-grid,
+    .project-overview-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .card,
+    .form-card,
+    .media-card,
+    .project-card,
+    .resource-link,
+    .learning-workspace,
+    .guide-step,
+    .event-card,
+    .image-card,
+    .journey-step,
+    .modal-box,
+    .modal-content {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .showcase-grid {
+        gap: 20px;
+    }
+
+    .project-card {
+        min-height: 360px;
+    }
+
+    .learning-menu {
+        position: static !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .learning-menu-button {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .learning-tabs {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+    }
+
+    .learning-tab {
+        min-width: 0;
+        padding: 12px 10px !important;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .learning-tab span {
+        min-width: 0;
+    }
+
+    .image-card,
+    .two-col-grid .image-card {
+        min-height: 300px !important;
+    }
+
+    .ai-hero {
+        min-height: 620px !important;
+    }
+
+    .hero-container {
+        padding: 104px 18px 62px !important;
+    }
+
+    .ai-hero-layout .title-glass,
+    .title-glass {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 22px !important;
+        border-radius: 22px;
+    }
+
+    .hero-title {
+        max-width: 100%;
+        font-size: clamp(44px, 14vw, 66px) !important;
+        line-height: 0.92;
+        letter-spacing: -3px !important;
+    }
+
+    .ai-journey,
+    .ai-project-cta {
+        width: auto;
+        margin-right: 18px;
+        margin-left: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .journey-track {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .journey-step {
+        width: 100% !important;
+    }
+
+    .journey-arrow {
+        justify-content: center;
+        transform: rotate(90deg);
+    }
+
+    .modal-overlay,
+    .modal {
+        padding: 12px !important;
+    }
+
+    .modal-box,
+    .modal-content {
+        width: 100%;
+        padding: 28px 20px !important;
+        border-radius: 20px;
+    }
+
+    .modal-box h2,
+    .modal-content h2 {
+        padding-right: 34px;
+        font-size: clamp(28px, 8vw, 38px) !important;
+    }
+
+    .modal-box .modal-details-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+
+    .field,
+    .btn,
+    .challenge-option {
+        min-width: 0;
+    }
+
+    .credential-table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .code-block,
+    pre {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .testimonial-wrapper {
+        max-width: 100%;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .slider-btn.prev {
+        left: 0 !important;
+    }
+
+    .slider-btn.next {
+        right: 0 !important;
+    }
+
+    body.home-page {
+        --home-content-gutter: 18px !important;
+    }
+
+    body.home-page .fv2-home-hero {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
+
+    body.home-page .fv2-hero-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body.home-page .fv2-hero-glass {
+        min-height: auto;
+        padding: 34px 20px !important;
+    }
+
+    body.home-page .fv2-hero-title {
+        max-width: 100%;
+        font-size: clamp(46px, 15vw, 68px) !important;
+        line-height: 0.9;
+        letter-spacing: -3.5px !important;
+    }
+
+    body.home-page .fv2-hero-actions {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    body.home-page .fv2-btn-primary,
+    body.home-page .fv2-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    body.home-page .fv2-hero-mascot {
+        min-height: 440px !important;
+        overflow: hidden;
+    }
+
+    body.home-page .fv2-hero-mascot-img {
+        width: min(88vw, 340px) !important;
+        max-height: 360px !important;
+    }
+
+    body.home-page .fv2-mascot-ring-one {
+        width: min(330px, 88vw) !important;
+        height: min(330px, 88vw) !important;
+    }
+
+    body.home-page .fv2-mascot-ring-two {
+        width: min(260px, 70vw) !important;
+        height: min(260px, 70vw) !important;
+    }
+
+    body.home-page .fv2-mascot-welcome-box {
+        width: min(300px, calc(100% - 18px)) !important;
+    }
+
+    body.home-page .fv2-home-sections .container,
+    body.home-page #content > .section {
+        width: calc(100% - 36px) !important;
+        max-width: none;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    body.home-page .fv2-home-sections .card-grid,
+    body.home-page .fv2-home-sections .project-overview-grid,
+    body.home-page .fv2-home-sections .challenge-box,
+    body.home-page .fv2-home-sections .challenge-side,
+    body.home-page .fv2-home-sections .journey-track {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    body.home-page .fv2-home-sections .journey {
+        padding: 32px 18px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding-right: 10px !important;
+        padding-left: 12px !important;
+    }
+
+    .logo span {
+        font-size: 15px !important;
+    }
+
+    .mobile-menu.open {
+        right: 10px !important;
+        width: min(280px, calc(100vw - 20px)) !important;
+        max-width: calc(100vw - 20px) !important;
+    }
+
+    .hero {
+        min-height: 580px;
+        padding-right: 14px !important;
+        padding-left: 14px !important;
+    }
+
+    .hero-card {
+        padding: 27px 19px !important;
+    }
+
+    .hero h1,
+    .hero-title,
+    body.home-page .fv2-hero-title {
+        font-size: clamp(42px, 14.5vw, 60px) !important;
+        letter-spacing: -2.8px !important;
+    }
+
+    .section {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .learning-tabs {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .team-grid,
+    .why-join-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+    .event-card img {
+        height: 180px;
+    }
+
+    body.home-page .fv2-hero-stats {
+        flex-wrap: wrap;
+        gap: 14px 0;
+    }
+
+    body.home-page .fv2-hero-stat {
+        flex: 1 1 30%;
+        min-width: 82px;
+        padding: 0 8px;
+    }
+
+    body.home-page .fv2-hero-mascot {
+        min-height: 400px !important;
+    }
+}

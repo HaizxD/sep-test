@@ -1,0 +1,176 @@
+body .resources-inline-style-1 {
+    display: none;
+    margin-top: 18px;
+}
+body .resources-inline-style-2,
+body .resources-inline-style-3 {
+    margin-top: 12px;
+}
+.api-project-actions {
+    margin-top: 24px;
+}
+.api-project-status {
+    margin-bottom: 18px;
+}
+.api-project-grid:empty {
+    display: none;
+}
+.api-project-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.api-project-card h3,
+.api-project-card p {
+    overflow-wrap: anywhere;
+}
+.api-project-card h3 a:hover {
+    color: var(--cyan-light);
+}
+.api-project-description {
+    flex: 1;
+    margin-bottom: 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
+.api-project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 4px 0 20px;
+}
+.api-project-meta .pill {
+    max-width: 100%;
+}
+.api-project-card .resource-actions {
+    margin-top: auto;
+}
+.api-project-card .resource-actions .btn {
+    width: 100%;
+}
+#refreshApiProjects:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+}
+@media (max-width: 700px) {
+    .api-project-actions .btn {
+        width: 100%;
+    }
+    .api-project-meta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+.api-project-controls {
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) 190px auto auto auto;
+    gap: 12px;
+    align-items: stretch;
+    margin-bottom: 22px;
+}
+.api-project-controls .field,
+.api-project-controls .btn {
+    min-height: 48px;
+}
+.api-search-shell {
+    position: relative;
+    min-width: 0;
+}
+.api-search-shell .field {
+    width: 100%;
+}
+.api-search-suggestions {
+    position: absolute;
+    z-index: 40;
+    top: calc(100% + 8px);
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(13, 13, 20, 0.98);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(18px);
+}
+.api-search-suggestion {
+    width: 100%;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+}
+.api-search-suggestion:last-child {
+    border-bottom: 0;
+}
+.api-search-suggestion:hover,
+.api-search-suggestion:focus-visible {
+    background: var(--surface-soft);
+    outline: none;
+}
+.api-search-suggestion-term {
+    min-width: 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.api-search-suggestion-hint {
+    flex: 0 1 auto;
+    color: var(--muted);
+    font-size: 11px;
+    text-align: right;
+}
+body.light-mode .api-search-suggestions {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
+}
+body.light-mode .api-search-suggestion {
+    color: #0f172a;
+}
+body.light-mode .api-search-suggestion:hover,
+body.light-mode .api-search-suggestion:focus-visible {
+    background: rgba(15, 23, 42, 0.05);
+}
+@media (max-width: 1180px) {
+    .api-project-controls {
+        grid-template-columns: minmax(0, 1fr) 190px repeat(3, auto);
+    }
+    .api-project-controls .btn {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+@media (max-width: 950px) {
+    .api-project-controls {
+        grid-template-columns: minmax(0, 1fr) 190px;
+    }
+    .api-project-controls .btn {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .api-project-controls {
+        grid-template-columns: 1fr;
+    }
+    .api-project-controls .field,
+    .api-project-controls .btn {
+        width: 100%;
+        min-width: 0;
+    }
+    .api-search-suggestion {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .api-search-suggestion-hint {
+        text-align: left;
+    }
+}
