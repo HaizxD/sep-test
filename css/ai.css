@@ -1087,101 +1087,37 @@
 
 body {
   background:
-    radial-gradient(circle at 12% 34%, rgba(124, 58, 237, .10), transparent 30%),
-    radial-gradient(circle at 88% 64%, rgba(6, 182, 212, .08), transparent 30%),
-    linear-gradient(180deg, #050506 0%, #09070e 48%, #04090c 100%);
+    radial-gradient(circle at 12% 28%, rgba(124, 58, 237, 0.10), transparent 38%),
+    radial-gradient(circle at 88% 62%, rgba(6, 182, 212, 0.08), transparent 40%),
+    linear-gradient(180deg, #07070b 0%, #080a10 50%, #061015 100%);
   background-attachment: fixed;
 }
 
 body.light-mode {
   background:
-    radial-gradient(circle at 12% 34%, rgba(124, 58, 237, .07), transparent 30%),
-    radial-gradient(circle at 88% 64%, rgba(6, 182, 212, .06), transparent 30%),
-    linear-gradient(180deg, #f5f4fa 0%, #eef5f8 50%, #f5f7fa 100%);
-  background-attachment: fixed;
-}
-
-.learning-section {
-  background:
-    radial-gradient(circle at 4% 18%, rgba(124, 58, 237, .075), transparent 27%),
-    radial-gradient(circle at 96% 58%, rgba(6, 182, 212, .055), transparent 28%),
-    linear-gradient(
-      180deg,
-      rgba(139, 92, 246, .018),
-      rgba(6, 182, 212, .014) 55%,
-      transparent 100%
-    );
-}
-
-body.light-mode .learning-section {
-  background:
-    radial-gradient(circle at 4% 18%, rgba(124, 58, 237, .055), transparent 27%),
-    radial-gradient(circle at 96% 58%, rgba(6, 182, 212, .045), transparent 28%),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, .40),
-      rgba(238, 245, 248, .34) 55%,
-      rgba(255, 255, 255, .18) 100%
-    );
-}
-
-.ai-journey {
-  background:
-    radial-gradient(circle at 16% 50%, rgba(124, 58, 237, .075), transparent 30%),
-    radial-gradient(circle at 84% 40%, rgba(6, 182, 212, .055), transparent 30%),
-    linear-gradient(
-      135deg,
-      rgba(13, 10, 22, .70),
-      rgba(5, 13, 17, .64)
-    );
-}
-
-body.light-mode .ai-journey {
-  background:
-    radial-gradient(circle at 16% 50%, rgba(124, 58, 237, .06), transparent 30%),
-    radial-gradient(circle at 84% 40%, rgba(6, 182, 212, .05), transparent 30%),
-    linear-gradient(
-      135deg,
-      rgba(247, 244, 255, .88),
-      rgba(239, 249, 252, .86)
-    );
-}
-
-.ai-project-cta {
-  background:
-    radial-gradient(circle at 18% 50%, rgba(124, 58, 237, .09), transparent 32%),
-    radial-gradient(circle at 82% 50%, rgba(6, 182, 212, .07), transparent 32%),
-    rgba(255, 255, 255, .035);
-}
-
-body.light-mode .ai-project-cta {
-  background:
-    radial-gradient(circle at 18% 50%, rgba(124, 58, 237, .07), transparent 32%),
-    radial-gradient(circle at 82% 50%, rgba(6, 182, 212, .055), transparent 32%),
-    rgba(255, 255, 255, .58);
-}
-
-
-body {
-  background:
-    radial-gradient(circle at 10% 28%, rgba(124, 58, 237, .10), transparent 34%),
-    radial-gradient(circle at 90% 58%, rgba(6, 182, 212, .085), transparent 36%),
-    radial-gradient(circle at 48% 92%, rgba(139, 92, 246, .055), transparent 34%),
-    linear-gradient(180deg, #07070b 0%, #090812 44%, #061015 100%);
+    radial-gradient(circle at 12% 28%, rgba(124, 58, 237, 0.06), transparent 38%),
+    radial-gradient(circle at 88% 62%, rgba(6, 182, 212, 0.05), transparent 40%),
+    linear-gradient(180deg, #f5f4fa 0%, #f1f5f8 50%, #eef5f7 100%);
   background-attachment: fixed;
 }
 
 .learning-section,
 .ai-journey,
 .ai-project-cta {
-  background: transparent;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.learning-section::before,
+.learning-section::after {
+  display: none !important;
 }
 
 .ai-journey {
-  border-top-color: transparent;
+  border-top: none !important;
 }
 
 .ai-project-cta {
-  border-color: transparent;
-  border-radius: 0;
+  border: none !important;
+  border-radius: 0 !important;
 }
