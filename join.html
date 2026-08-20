@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Join | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Membership application for the Artificial Intelligence Society (AIS).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/join.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">AIS MEMBERSHIP APPLICATION</div>
+                <h1>JOIN THE<br>SOCIETY</h1>
+                <p>Become part of the Artificial Intelligence Society and connect with students who want to explore, build and grow together through AI, machine learning and innovation.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#application">Apply Now ↓</a>
+                    <a class="btn btn-secondary" href="profile.html">Member Login</a>
+                </div>
+            </div>
+            <div class="hero-art">
+                <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=max&amp;w=1400&amp;q=85"
+                    alt="Students collaborating around a laptop during a group session"
+                >
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section" id="application">
+            <div class="form-shell reveal">
+                <div class="form-card">
+                    <div class="section-label">APPLICATION GUIDE</div>
+                    <h2 class="join-inline-style-1">What to<br>write.</h2>
+                    <p class="lead-copy">Use the examples below as inspiration for describing your background, interests and what you hope to explore with the society.</p>
+                    <div class="divider"></div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Use identifiable student details</h3>
+                            <p>Example: <strong>Alex Tan</strong>, student ID <strong>2301234</strong>, programme <strong>Computer Science</strong>.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Choose your phone country format</h3>
+                            <p>Select a country calling code first. The phone field then shows an example layout for that country.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Describe a specific learning goal</h3>
+                            <p>Example: <strong>Build a classifier for study notes and learn how to evaluate it on unseen data.</strong></p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>List practical team strengths</h3>
+                            <p>Example: <strong>Python basics, UI design, presentation, documentation or project planning.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form-card" id="joinForm">
+                    <div class="section-label">APPLICATION FORM</div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full name</label>
+                            <input class="field" id="fullName" name="fullName" required autocomplete="name" placeholder="e.g. Alex Tan Wei Ming">
+                            <span class="field-help">Use the name you normally use for university records.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentId">Student ID</label>
+                            <input class="field" id="studentId" name="studentId" required inputmode="numeric" placeholder="e.g. 2301234">
+                            <span class="field-help">Enter your university student ID without extra notes.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="field" id="email" name="email" type="email" required autocomplete="email" placeholder="e.g. alex.tan@example.edu">
+                            <span class="field-help">Use an address you check regularly.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="programme">Programme</label>
+                            <input class="field" id="programme" name="programme" required autocomplete="organization-title" placeholder="e.g. Computer Science">
+                            <span class="field-help">Write your current degree or programme name.</span>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="phoneNumber">Phone number</label>
+                            <div class="phone-row">
+                                <select class="field" id="phoneCountry" name="phoneCountry" required aria-label="Phone country code">
+                                    <option value="MY" data-code="+60" data-example="12 345 6789">Malaysia +60</option>
+                                    <option value="SG" data-code="+65" data-example="8123 4567">Singapore +65</option>
+                                    <option value="ID" data-code="+62" data-example="812 3456 7890">Indonesia +62</option>
+                                    <option value="TH" data-code="+66" data-example="81 234 5678">Thailand +66</option>
+                                    <option value="CN" data-code="+86" data-example="138 0013 8000">China +86</option>
+                                    <option value="IN" data-code="+91" data-example="98765 43210">India +91</option>
+                                    <option value="GB" data-code="+44" data-example="7700 900123">United Kingdom +44</option>
+                                    <option value="US" data-code="+1" data-example="202 555 0123">United States / Canada +1</option>
+                                    <option value="OTHER" data-code="+" data-example="country code + local number">Other / International</option>
+                                </select>
+                                <input class="field" id="phoneNumber" name="phoneNumber" type="tel" required autocomplete="tel-national" placeholder="12 345 6789" aria-describedby="phoneHelp">
+                            </div>
+                            <span class="field-help" id="phoneHelp">Selected format: +60 12 345 6789. Spaces and hyphens are allowed.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">AI experience</label>
+                            <select class="field" id="experience" name="experience" required>
+                                <option value="">Select level</option>
+                                <option>New to AI</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                            <span class="field-help">Choose the option that best describes your current practical experience.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Main interest</label>
+                            <select class="field" id="interest" name="interest" required>
+                                <option value="">Choose an area</option>
+                                <option>Generative AI &amp; LLMs</option>
+                                <option>Machine Learning</option>
+                                <option>Prompt Engineering</option>
+                                <option>AI Product Design</option>
+                                <option>Responsible AI</option>
+                            </select>
+                            <span class="field-help">Pick the area you most want to explore first.</span>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="projectIdea">What would you like to build or learn?</label>
+                            <textarea class="field" id="projectIdea" name="projectIdea" required placeholder="Example: I want to build a simple study-note classifier and learn how train/test splits and evaluation metrics work."></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="strengths">What can you contribute to a team?</label>
+                            <textarea class="field" id="strengths" name="strengths" placeholder="Example: Python basics, UI design, research, presentation and documentation."></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="check-row">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <span>I confirm that the information I provided is accurate for this membership application.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary join-inline-style-2" type="submit">Submit Application →</button>
+                    <div id="formMessage" class="form-message" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/join.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

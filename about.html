@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>About | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Artificial Intelligence Society (AIS) student front-end website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/about.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">ABOUT THE CLUB</div>
+                <h1>WHO WE<br>ARE</h1>
+                <p>A student-led learning community focused on accessible AI education, experimentation, collaboration and responsible innovation.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#content">Explore Page ↓</a>
+                    <a class="btn btn-secondary" href="join.html">Join the Club</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/graphics/workshop-collab.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        
+        <section class="section">
+            <div class="media-split reveal">
+                <div>
+                    <div class="section-label">OUR PURPOSE</div>
+                    <h2>Learn by<br>building.</h2>
+                    <p class="lead-copy">The club is designed for students who want a structured place to explore AI without requiring prior expert knowledge.</p>
+                    <div class="grid grid-2 about-inline-style-1">
+                        <div class="card">
+                            <div class="icon">🧠</div>
+                            <h3>Accessible Learning</h3>
+                            <p>Break complex ideas into approachable workshops, demos and guided practice.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon">⚖️</div>
+                            <h3>Responsible AI</h3>
+                            <p>Discuss limitations, evaluation, data quality, privacy and trustworthy design.</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="media-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=max&amp;w=1400&amp;q=85"
+                        data-fallback="assets/graphics/workshop-collab.svg"
+                        alt="Students collaborating around laptops"
+                    >
+                    <figcaption class="media-caption">
+                        <div class="mini">STUDENT COMMUNITY</div>
+                        <strong>Learn, test ideas and improve them together.</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">HOW IT WORKS</div>
+                <h2>A simple<br>club cycle.</h2>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-item"><h3>Learn</h3><p>Start with a concept session, visual resource or guided workshop.</p></div>
+                <div class="timeline-item"><h3>Practice</h3><p>Complete randomized questions and review explanations for each answer.</p></div>
+                <div class="timeline-item"><h3>Build</h3><p>Create a small project individually or with a team and define how it will be evaluated.</p></div>
+                <div class="timeline-item"><h3>Share</h3><p>Present the result, record workshop or event participation and collect feedback for the next iteration.</p></div>
+            </div>
+        </section>
+
+        <section class="section about-inline-style-2">
+            
+            <div class="stats-grid">
+                <div class="stat-card"><div class="number">5+</div><div class="label">Years Building</div></div>
+                <div class="stat-card"><div class="number">120+</div><div class="label">Active Members</div></div>
+                <div class="stat-card"><div class="number">45+</div><div class="label">Projects Built</div></div>
+                <div class="stat-card"><div class="number">12+</div><div class="label">Industry Partners</div></div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-label">OUR STORY</div>
+                <h2>BUILDING THE<br>AI FUTURE</h2>
+                <p>From a small group of curious students to a thriving innovation community — this is our journey.</p>
+            </div>
+            <div class="story-text">
+                <p>The <strong>AI & Innovation Club</strong> was founded with a simple but powerful vision: to create a space where students from any background could come together to explore, learn and build with Artificial Intelligence.</p>
+                <p>What started as a small meetup of 10 students has grown into a diverse community of over 120 members — including data scientists, software engineers, designers, product managers and AI enthusiasts. We've partnered with leading tech companies, hosted industry workshops and built projects that have been featured at university showcases and innovation conferences.</p>
+                <p>Our club is built on the belief that <strong>AI is for everyone</strong>. You don't need a PhD in computer science to join us. You just need curiosity, creativity and a willingness to learn. Whether you're a complete beginner or already building your own models, there's a place for you here.</p>
+            </div>
+
+            <div class="section-head about-inline-style-3">
+                <div class="section-label">WHY JOIN US</div>
+                <h2>YOUR AI JOURNEY<br>STARTS HERE</h2>
+            </div>
+            <div class="why-join-grid">
+                <div class="why-join-card"><span class="icon">🚀</span><h4>Learn by Building</h4><p>Work on real AI projects that go beyond theory. Build a portfolio that stands out to employers.</p></div>
+                <div class="why-join-card"><span class="icon">🤝</span><h4>Network & Connect</h4><p>Meet like-minded peers, industry mentors, and potential collaborators who share your passion.</p></div>
+                <div class="why-join-card"><span class="icon">🧠</span><h4>Grow Your Skills</h4><p>From beginner to advanced — workshops, hackathons and challenges designed for every level.</p></div>
+                <div class="why-join-card"><span class="icon">💡</span><h4>Innovate Together</h4><p>Turn your ideas into impact. Join a culture that encourages creativity and bold thinking.</p></div>
+                <div class="why-join-card"><span class="icon">🏆</span><h4>Compete & Win</h4><p>Participate in AI competitions and showcase your work at industry events and university showcases.</p></div>
+                <div class="why-join-card"><span class="icon">🌍</span><h4>Shape the Future</h4><p>Be part of a generation that's building responsible, ethical and impactful AI for the world.</p></div>
+            </div>
+
+            <div class="section-head about-inline-style-4">
+                <div class="section-label">MEET THE TEAM</div>
+                <h2>OUR LEADERS</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Sarah Chen"></div><h4>Dr. Sarah Chen</h4><div class="role">Founder & AI Lead</div><div class="bio">PhD ML. Ex-Google AI. Making AI accessible.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus Rivera"></div><h4>Marcus Rivera</h4><div class="role">Technical Director</div><div class="bio">Full-stack & ML engineer. 15+ production systems.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Sharma"></div><h4>Priya Sharma</h4><div class="role">Design & Product Lead</div><div class="bio">Product designer. Human-centered & ethical AI.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/men/52.jpg" alt="James Okafor"></div><h4>James Okafor</h4><div class="role">Community & Outreach</div><div class="bio">10+ tech partnerships. Hackathon organiser.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Zhang"></div><h4>Emily Zhang</h4><div class="role">Data Science Lead</div><div class="bio">NLP & computer vision. Data storytelling.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Carlos Mendez"></div><h4>Carlos Mendez</h4><div class="role">AI Ethics & Research</div><div class="bio">Fairness, accountability & transparency in AI.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/women/57.jpg" alt="Aisha Patel"></div><h4>Dr. Aisha Patel</h4><div class="role">Research Advisor</div><div class="bio">Published 20+ AI papers. NLP & generative models.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Tomoya Suzuki"></div><h4>Tomoya Suzuki</h4><div class="role">ML Infrastructure</div><div class="bio">Built scalable AI pipelines. MLOps & cloud expert.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Maya Johnson"></div><h4>Maya Johnson</h4><div class="role">Product Strategy</div><div class="bio">Launched 3 AI products. AI x business.</div></div>
+                <div class="team-card"><div class="team-avatar"><img src="https://randomuser.me/api/portraits/men/17.jpg" alt="David Osei"></div><h4>David Osei</h4><div class="role">Innovation Lead</div><div class="bio">Led 8 hackathon winning teams. Creative problem-solving.</div></div>
+            </div>
+
+            <div class="section-head about-inline-style-5">
+                <div class="section-label">WHAT OUR MEMBERS SAY</div>
+                <h2>TESTIMONIALS</h2>
+            </div>
+            <div class="testimonial-wrapper">
+                <button class="slider-btn prev" id="prevSlide" aria-label="Previous testimonial">‹</button>
+                <button class="slider-btn next" id="nextSlide" aria-label="Next testimonial">›</button>
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="slide active">
+                        <div class="slide-avatar"><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Amara Okonkwo"></div>
+                        <div class="slide-content">
+                            <div class="stars">★★★★★</div>
+                            <div class="quote">"Joining this club completely changed my perspective on AI. I went from knowing nothing about machine learning to building my own chatbot in just two months. The community is incredibly supportive."</div>
+                            <div class="author-name">Amara Okonkwo</div>
+                            <div class="author-role">Computer Science, Year 2</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-avatar"><img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Kim"></div>
+                        <div class="slide-content">
+                            <div class="stars">★★★★★</div>
+                            <div class="quote">"The workshops and mentorship I received here helped me land an internship at a top AI startup. The projects we built together gave me real-world experience I could talk about in interviews."</div>
+                            <div class="author-name">David Kim</div>
+                            <div class="author-role">Data Science, Year 3</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-avatar"><img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Sophie Taylor"></div>
+                        <div class="slide-content">
+                            <div class="stars">★★★★★</div>
+                            <div class="quote">"I'm not a CS major, but this club made AI feel approachable. I've learned so much about prompt engineering and creative AI applications. It's truly a space for everyone."</div>
+                            <div class="author-name">Sophie Taylor</div>
+                            <div class="author-role">Design & Media, Year 2</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-avatar"><img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex Rivera"></div>
+                        <div class="slide-content">
+                            <div class="stars">★★★★★</div>
+                            <div class="quote">"The hackathons organised by the club pushed me to think creatively and work under pressure. I built my first AI-powered web app here — now I'm building them for a living."</div>
+                            <div class="author-name">Alex Rivera</div>
+                            <div class="author-role">Software Engineering, Year 4</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-avatar"><img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Naomi Chen"></div>
+                        <div class="slide-content">
+                            <div class="stars">★★★★★</div>
+                            <div class="quote">"The AI Ethics discussions opened my eyes to the responsibility we have as builders. This club doesn't just teach you how to build AI — it teaches you how to build it responsibly."</div>
+                            <div class="author-name">Dr. Naomi Chen</div>
+                            <div class="author-role">AI Ethics Researcher</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots">
+                    <span class="active" data-index="0"></span>
+                    <span data-index="1"></span>
+                    <span data-index="2"></span>
+                    <span data-index="3"></span>
+                    <span data-index="4"></span>
+                </div>
+            </div>
+
+            <div class="join-cta">
+                <div>
+                    <span>BECOME A MEMBER</span>
+                    <h2>Join the AI Society</h2>
+                    <p>Ready to start your AI journey? Whether you're a beginner or an experienced builder, we welcome you to our community.</p>
+                    <a href="join.html">Join Us Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

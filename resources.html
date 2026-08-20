@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Resources | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Searchable AI and machine learning resource library from the Artificial Intelligence Society (AIS).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/resources.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">AIS LEARNING LIBRARY</div>
+                <h1>FIND THE<br>RIGHT RESOURCE</h1>
+                <p>Explore practical AIS guides and trusted learning materials by topic and format to build skills, discover new concepts and find inspiration for your next project.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#library">Open Library ↓</a>
+                    <a class="btn btn-secondary" href="ml-projects.html">Start a Project</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/graphics/resources-lab.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section" id="library">
+            <div class="section-head reveal">
+                <div class="section-label">SEARCHABLE RESOURCE LIBRARY</div>
+                <h2>Search. Filter.<br>Open.</h2>
+                <p>Explore and learn new concepts through AIS guides, hands-on activities and trusted resources across artificial intelligence, machine learning, data and prompting.</p>
+            </div>
+
+            <div class="library-controls reveal">
+                <input class="field" id="resourceSearch" type="search" placeholder="Search e.g. Python, classification, RAG, prompting..." aria-label="Search resources">
+                <select class="field" id="resourceFilter" aria-label="Filter resource category">
+                    <option value="all">All categories</option>
+                    <option value="ais">AIS guides</option>
+                    <option value="ml">Machine learning</option>
+                    <option value="data">Data &amp; Python</option>
+                    <option value="llm">LLMs &amp; prompting</option>
+                </select>
+            </div>
+
+            <div class="resource-library-grid reveal" id="resourceGrid">
+                <article class="card resource-item" data-category="ais llm" data-search="ais ai foundations artificial intelligence llm prompt responsible ai concepts">
+                    <div>
+                        <div class="icon">🧠</div>
+                        <div class="mini">AIS GUIDE</div>
+                        <h3>AI Foundations</h3>
+                        <p>Core terminology covering AI, machine learning, LLMs, evaluation and responsible use.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="ai.html">Open AIS Guide →</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ais ml data" data-search="projects python scikit learn classifier clustering retrieval ml code">
+                    <div>
+                        <div class="icon">🛠️</div>
+                        <div class="mini">AIS PROJECT LAB</div>
+                        <h3>Guided ML Projects</h3>
+                        <p>Step-by-step projects with starter code, notes, evaluation guidance and completion tracking.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="ml-projects.html">Open Projects →</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ais llm ml" data-search="workshop prompt rag grounding machine learning evaluation responsible ai lesson">
+                    <div>
+                        <div class="icon">🎓</div>
+                        <div class="mini">AIS WORKSHOPS</div>
+                        <h3>Step-by-Step Workshops</h3>
+                        <p>Self-guided lessons for prompting, ML foundations, RAG and responsible evaluation.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="workshop.html">Open Workshops →</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ml data" data-search="scikit learn python classification regression preprocessing pipeline evaluation examples">
+                    <div>
+                        <div class="icon">🐍</div>
+                        <div class="mini">OFFICIAL DOCUMENTATION</div>
+                        <h3>scikit-learn Getting Started</h3>
+                        <p>Introduction to estimators, preprocessing, pipelines, model selection and evaluation.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="https://scikit-learn.org/stable/getting_started.html" target="_blank" rel="noopener noreferrer">Open Documentation ↗</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ml" data-search="google machine learning crash course classification regression neural networks embeddings llm">
+                    <div>
+                        <div class="icon">📘</div>
+                        <div class="mini">OFFICIAL COURSE</div>
+                        <h3>Google ML Crash Course</h3>
+                        <p>Hands-on learning modules covering key machine learning concepts and practice exercises.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener noreferrer">Open Course ↗</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="data" data-search="pandas python dataframe csv data cleaning tabular tutorial">
+                    <div>
+                        <div class="icon">📊</div>
+                        <div class="mini">OFFICIAL DOCUMENTATION</div>
+                        <h3>pandas Getting Started</h3>
+                        <p>Learn how to work with tabular data, read files, select rows and columns, calculate summaries and transform data.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank" rel="noopener noreferrer">Open Tutorials ↗</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ml" data-search="tensorflow beginner tutorial neural network keras colab image classification">
+                    <div>
+                        <div class="icon">🧩</div>
+                        <div class="mini">OFFICIAL TUTORIAL</div>
+                        <h3>TensorFlow Beginner Quickstart</h3>
+                        <p>Build, train and evaluate a neural network in a browser-based notebook workflow.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="https://www.tensorflow.org/tutorials/quickstart/beginner" target="_blank" rel="noopener noreferrer">Open Tutorial ↗</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ml llm" data-search="tensorflow javascript browser machine learning tensorflow js web">
+                    <div>
+                        <div class="icon">🌐</div>
+                        <div class="mini">OFFICIAL LIBRARY</div>
+                        <h3>TensorFlow.js</h3>
+                        <p>Explore machine learning models that can run in JavaScript in the browser or Node.js.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="https://www.tensorflow.org/js" target="_blank" rel="noopener noreferrer">Open TensorFlow.js ↗</a>
+                    </div>
+                </article>
+
+                <article class="card resource-item" data-category="ais llm ml" data-search="quiz practice questions answers explanations challenge ai llm machine learning">
+                    <div>
+                        <div class="icon">✅</div>
+                        <div class="mini">AIS PRACTICE</div>
+                        <h3>Randomized Challenges</h3>
+                        <p>Practice AI, ML and LLM concepts with randomized questions, randomized answer positions and stored explanations.</p>
+                    </div>
+                    <div class="resource-actions">
+                        <a class="btn btn-secondary" href="challenges.html">Take a Challenge →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice resources-inline-style-1" id="resourceEmpty">No resources match the current search and category.</div>
+        </section>
+
+        <section class="section compact" id="live-projects">
+            <div class="section-head reveal">
+                <div class="section-label">LIVE OPEN-SOURCE PROJECTS</div>
+                <h2>Explore current<br>AI projects.</h2>
+                <p>Discover open-source AI projects from around the world. Search a topic, explore highly rated repositories or try a random topic to find something new.</p>
+            </div>
+
+            <div class="api-project-controls reveal">
+                <div class="api-search-shell">
+                    <input class="field" id="apiProjectSearch" type="search" placeholder="Search e.g. large language model, computer vision..." aria-label="Search GitHub projects by AI topic" autocomplete="off" aria-autocomplete="list" aria-controls="apiSearchSuggestions" aria-expanded="false">
+                    <div class="api-search-suggestions" id="apiSearchSuggestions" role="listbox" aria-label="Suggested AI topics" hidden></div>
+                </div>
+                <select class="field" id="apiProjectSort" aria-label="Sort GitHub projects">
+                    <option value="stars">Highest starred</option>
+                    <option value="forks">Most forked</option>
+                    <option value="updated">Recently updated</option>
+                </select>
+                <button class="btn btn-primary" id="searchApiProjects" type="button">Search Projects</button>
+                <button class="btn btn-secondary" id="randomApiProjects" type="button">Random Topic</button>
+                <button class="btn btn-secondary" id="refreshApiProjects" type="button">Refresh Results</button>
+            </div>
+
+            <div class="notice info api-project-status reveal" id="apiProjectStatus" role="status" aria-live="polite">Loading a random set of highly starred AI projects from GitHub...</div>
+            <div class="grid grid-3 api-project-grid reveal" id="apiProjectGrid" aria-live="polite"></div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">VIDEO LEARNING</div>
+                <h2>Watch the<br>concepts move.</h2>
+                <p>Learn through curated videos that bring AI and machine learning concepts to life with visual explanations, demonstrations and practical examples.</p>
+            </div>
+            <div class="grid grid-2 reveal">
+                <div>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/qYNweeDHiyU"
+                            title="AI, Machine Learning, Deep Learning and Generative AI Explained"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="card resources-inline-style-2">
+                        <div class="mini">EXTERNAL VIDEO</div>
+                        <h3>AI, ML, Deep Learning &amp; Generative AI</h3>
+                        <p>Use this as a visual primer before exploring the AIS AI Hub.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="video-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/7R52wiUgxZI"
+                            title="DeepMind and UCL Deep Learning Lecture Introduction"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="card resources-inline-style-3">
+                        <div class="mini">EXTERNAL VIDEO</div>
+                        <h3>Deep Learning Lecture Introduction</h3>
+                        <p>A longer-form technical resource for members who want additional depth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

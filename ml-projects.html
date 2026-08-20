@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png" />
+    <title>ML Projects | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Guided machine learning projects from the Artificial Intelligence Society (AIS)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/ml-projects.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot ml-projects-inline-style-1" src="assets/images/ais-mascot-icon.png" alt="AIS mascot">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html" class="active">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/ml-video4.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">AIS PROJECT LAB</div>
+                <h1>BUILD REAL<br>ML PROJECTS</h1>
+                <p>Choose a guided project and move from idea to working model with clear steps, starter code, evaluation guidance and space to reflect on what you learned.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">Open Project Lab ↓</a>
+                    <a class="btn btn-secondary" href="resources.html">Open Resource Library</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/graphics/ml-pipeline.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section" id="projects">
+            <div class="section-head reveal">
+                <div class="section-label">GUIDED PROJECTS</div>
+                <h2>Choose it.<br>Build it.</h2>
+                <p>Explore projects with clear objectives, guided workflows, starter code and evaluation practices that help you build confidence through hands-on machine learning.</p>
+            </div>
+
+            <div class="learning-browser reveal">
+                <aside class="learning-menu card" aria-label="Machine learning project list">
+                    <div class="section-label">PROJECT SELECTOR</div>
+                    <button class="learning-menu-button active" type="button" data-project-id="iris-classifier">
+                        <strong>Iris Flower Classifier</strong>
+                        <span>Beginner • Classification • +20 XP</span>
+                    </button>
+                    <button class="learning-menu-button" type="button" data-project-id="note-classifier">
+                        <strong>Study Note Topic Classifier</strong>
+                        <span>Intermediate • NLP • +35 XP</span>
+                    </button>
+                    <button class="learning-menu-button" type="button" data-project-id="resource-search">
+                        <strong>Semantic-Style Resource Search</strong>
+                        <span>Intermediate • Retrieval • +35 XP</span>
+                    </button>
+                    <button class="learning-menu-button" type="button" data-project-id="feedback-clusters">
+                        <strong>Feedback Theme Clustering</strong>
+                        <span>Advanced • Unsupervised ML • +50 XP</span>
+                    </button>
+                    <div class="notice info" id="projectSaveTarget">Login through Profile to record project completion and XP.</div>
+                </aside>
+
+                <article class="learning-workspace card" id="projectWorkspace" aria-live="polite"></article>
+            </div>
+        </section>
+
+        <section class="section compact ml-projects-inline-style-2">
+            <div class="section-head reveal">
+                <div class="section-label">PROJECT SHOWCASE</div>
+                <h2>See them in<br>action.</h2>
+                <p>Each project comes with a visual preview, difficulty level, and key technologies.</p>
+            </div>
+            <div class="showcase-grid" id="showcaseGrid"></div>
+        </section>
+
+        <section class="section compact">
+            <div class="media-split reveal">
+                <figure class="media-card">
+                    <img class="ml-projects-inline-style-3" src="assets/graphics/ml-pipeline.svg" alt="ML pipeline">
+                    <figcaption class="media-caption">
+                        <div class="mini">BUILD FLOW</div>
+                        <strong>Problem → data → baseline → model → evaluation → iteration.</strong>
+                    </figcaption>
+                </figure>
+                <div>
+                    <div class="section-label">PROJECT NOTES</div>
+                    <h2>Measure before<br>you celebrate.</h2>
+                    <p class="lead-copy">A working demo is only one part of an ML project. Keep the test data separate, compare against a baseline, inspect errors and record limitations.</p>
+                    <div class="note-box">AIS project rule: write down what "good enough" means before training. This makes your evaluation less dependent on whether a single demo looks impressive.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">LEARN MORE</div>
+                <h2>Official learning<br>references.</h2>
+                <p>Use these official documentation and course pages when you want more examples or deeper explanations.</p>
+            </div>
+            <div class="grid grid-3 reveal">
+                <a class="card resource-link" href="https://scikit-learn.org/stable/getting_started.html" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <div class="mini">SCIKIT-LEARN</div>
+                        <h3>Getting Started</h3>
+                        <p>Core estimator, preprocessing, pipeline and evaluation patterns.</p>
+                    </div>
+                    <span>↗</span>
+                </a>
+                <a class="card resource-link" href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <div class="mini">PANDAS</div>
+                        <h3>Getting Started Tutorials</h3>
+                        <p>Learn to load, inspect, select and transform tabular data.</p>
+                    </div>
+                    <span>↗</span>
+                </a>
+                <a class="card resource-link" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <div class="mini">GOOGLE</div>
+                        <h3>Machine Learning Crash Course</h3>
+                        <p>Practical modules covering core machine learning concepts and evaluation.</p>
+                    </div>
+                    <span>↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modalCloseBtn">✕</button>
+            <div class="modal-icon" id="modalIcon">🌸</div>
+            <h2 id="modalTitle">Project Title</h2>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-section">
+                <h4>Project Overview</h4>
+                <p id="modalOverview"></p>
+            </div>
+            <div class="modal-section">
+                <h4>Technologies</h4>
+                <div id="modalTechs"></div>
+            </div>
+            <div class="modal-section">
+                <h4>What You Will Learn</h4>
+                <p id="modalLearning"></p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+
+    <script src="js/ml-projects.js"></script>
+
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

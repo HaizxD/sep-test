@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Events | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Artificial Intelligence Society (AIS) student front-end website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/events.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">CLUB CALENDAR</div>
+                <h1>LEARN<br>TOGETHER</h1>
+                <p>Discover workshops, meetups and community events that bring members together to learn, share ideas and build practical AI skills.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#content">Explore Page ↓</a>
+                    <a class="btn btn-secondary" href="profile.html">Open Profile</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/graphics/workshop-collab.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="section">
+            <div class="media-split reveal">
+                <div>
+                    <div class="section-label">CLUB CALENDAR</div>
+                    <h2>Show up.<br>Build momentum.</h2>
+                    <p class="lead-copy">Join hands-on sessions, project meetups and community activities designed to help you learn with others, exchange ideas and stay connected with the society.</p>
+                </div>
+                <figure class="media-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=max&w=1400&q=85" data-fallback="assets/graphics/workshop-collab.svg" alt="Team collaborating in a workshop environment">
+                    <figcaption class="media-caption"><div class="mini">COMMUNITY EVENTS</div><strong>Practice, build and present with other members.</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head">
+                <div class="section-label">CURRENT EVENTS</div>
+                <h2>Upcoming &amp; open</h2>
+                <p>Record your attendance to earn XP and track progress.</p>
+            </div>
+            <div class="event-grid-2">
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="AI Kickoff Night">
+                    <div class="event-card-body">
+                        <div class="meta">FOUNDATIONS EVENT</div>
+                        <h4>AI Kickoff Night</h4>
+                        <p>Club orientation, AI concept map, member pathways and a short prompt challenge.</p>
+                        <div class="chips">
+                            <span class="pill">Beginner-friendly</span>
+                            <span class="pill">Community</span>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-track-activity data-activity-id="event-ai-kickoff" data-activity-proficiency="Beginner" data-activity-skill="Innovation" data-activity-xp="20" data-activity-type="Event" data-activity-title="AI Kickoff Night" data-activity-date="2026-07-04T18:30:00" data-activity-detail="Attended the club orientation and introductory prompt challenge.">Record attendance</button>
+                        <div class="track-status"></div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Prompt Engineering Lab">
+                    <div class="event-card-body">
+                        <div class="meta">PROMPT EVENT</div>
+                        <h4>Prompt Engineering Lab</h4>
+                        <p>Improve prompts through structured constraints, examples, scoring and iteration.</p>
+                        <div class="chips">
+                            <span class="pill">Hands-on</span>
+                            <span class="pill">LLM</span>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-track-activity data-activity-id="event-prompt-lab" data-activity-proficiency="Intermediate" data-activity-skill="Prompt Engineering" data-activity-xp="35" data-activity-type="Event" data-activity-title="Prompt Engineering Lab" data-activity-date="2026-07-19T14:30:00" data-activity-detail="Attended the structured prompting and scoring session.">Record attendance</button>
+                        <div class="track-status"></div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Mini ML Project Sprint">
+                    <div class="event-card-body">
+                        <div class="meta">BUILD EVENT</div>
+                        <h4>Mini ML Project Sprint</h4>
+                        <p>Form small groups and complete one scoped prototype with a defined evaluation metric.</p>
+                        <div class="chips">
+                            <span class="pill">Team build</span>
+                            <span class="pill">ML</span>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-track-activity data-activity-id="event-ml-sprint" data-activity-proficiency="Intermediate" data-activity-skill="Machine Learning" data-activity-xp="35" data-activity-type="Event" data-activity-title="Mini ML Project Sprint" data-activity-date="2026-07-26T10:00:00" data-activity-detail="Participated in a small-team prototype sprint and evaluation activity.">Record attendance</button>
+                        <div class="track-status"></div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80" alt="Innovation Demo Evening">
+                    <div class="event-card-body">
+                        <div class="meta">SHOWCASE EVENT</div>
+                        <h4>Innovation Demo Evening</h4>
+                        <p>Present what worked, what failed and what you would change in the next iteration.</p>
+                        <div class="chips">
+                            <span class="pill">Showcase</span>
+                            <span class="pill">Feedback</span>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-track-activity data-activity-id="event-demo-evening" data-activity-proficiency="Advanced" data-activity-skill="Innovation" data-activity-xp="50" data-activity-type="Event" data-activity-title="Innovation Demo Evening" data-activity-date="2026-08-15T18:00:00" data-activity-detail="Presented a prototype and reviewed peer feedback.">Record attendance</button>
+                        <div class="track-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head">
+                <div class="section-label">PAST EVENTS</div>
+                <h2>Previous sessions</h2>
+                <p>Explore events that have already taken place.</p>
+            </div>
+            <div class="event-grid-4">
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Intro to Neural Nets">
+                    <div class="event-card-body">
+                        <div class="meta">MAY 2026 · WORKSHOP</div>
+                        <h4>Intro to Neural Nets</h4>
+                        <p>Hands-on introduction to building a small neural network with PyTorch.</p>
+                        <button class="btn-outline" data-modal-title="Intro to Neural Nets" data-modal-meta="MAY 2026 · WORKSHOP" data-modal-date="May 15, 2026 · 2:00 PM - 5:00 PM" data-modal-desc="A practical workshop covering the fundamentals of neural networks. Participants built a simple feedforward network from scratch using PyTorch, learned about activation functions (ReLU, Sigmoid), backpropagation, and optimization techniques. The session included hands-on coding exercises and a mini challenge to classify handwritten digits from the MNIST dataset." data-modal-duration="3 hours" data-modal-level="Beginner to Intermediate" data-modal-capacity="25 attendees" data-modal-tags="PyTorch, Neural Networks, MNIST, Backpropagation">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="AI for Good Hackathon">
+                    <div class="event-card-body">
+                        <div class="meta">APR 2026 · HACKATHON</div>
+                        <h4>AI for Good Hackathon</h4>
+                        <p>Teams developed solutions for sustainability using computer vision and NLP.</p>
+                        <button class="btn-outline" data-modal-title="AI for Good Hackathon" data-modal-meta="APR 2026 · HACKATHON" data-modal-date="April 22-23, 2026 · 48 hours" data-modal-desc="A 48-hour hackathon focused on using AI for social and environmental impact. Teams tackled real-world challenges including waste classification using computer vision, disaster response coordination with NLP, and accessibility tools for the visually impaired. The winning team developed a prototype that could identify recyclable materials from images with 92% accuracy. Participants received mentorship from industry experts and networking opportunities with local NGOs." data-modal-duration="48 hours" data-modal-level="All levels" data-modal-capacity="60 participants" data-modal-tags="Hackathon, Computer Vision, NLP, Sustainability">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80" alt="Ethics in AI Panel">
+                    <div class="event-card-body">
+                        <div class="meta">MAR 2026 · PANEL</div>
+                        <h4>Ethics in AI Panel</h4>
+                        <p>Discussion on bias, fairness, and transparency with industry professionals.</p>
+                        <button class="btn-outline" data-modal-title="Ethics in AI Panel" data-modal-meta="MAR 2026 · PANEL" data-modal-date="March 10, 2026 · 6:00 PM - 8:30 PM" data-modal-desc="A thought-provoking panel discussion featuring experts from academia, industry, and policy-making. Key topics included algorithmic bias in healthcare and hiring, the importance of data privacy and consent, and the future of responsible AI development. Panelists shared case studies of AI failures and successes, and the audience engaged in a lively Q&A session. The event concluded with actionable steps for developers to build more ethical AI systems." data-modal-duration="2.5 hours" data-modal-level="All levels" data-modal-capacity="45 attendees" data-modal-tags="Ethics, Bias, Fairness, Privacy, Panel">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Data Science Meetup">
+                    <div class="event-card-body">
+                        <div class="meta">FEB 2026 · MEETUP</div>
+                        <h4>Data Science Meetup</h4>
+                        <p>Community gathering to share projects and discuss trends in data science.</p>
+                        <button class="btn-outline" data-modal-title="Data Science Meetup" data-modal-meta="FEB 2026 · MEETUP" data-modal-date="February 28, 2026 · 3:00 PM - 6:00 PM" data-modal-desc="A casual community meetup where members presented their recent data science projects. Presentations covered exploratory data analysis (EDA), feature engineering techniques, model deployment strategies, and lessons learned from real-world datasets. The session included open discussions on emerging trends in MLOps, AutoML, and the growing role of data scientists in product teams. Attendees also shared resources and job opportunities." data-modal-duration="3 hours" data-modal-level="Intermediate to Advanced" data-modal-capacity="30 attendees" data-modal-tags="Data Science, EDA, MLOps, Deployment, Community">View details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head">
+                <div class="section-label">UPCOMING EVENTS</div>
+                <h2>Plan ahead</h2>
+                <p>Mark your calendar for these future events.</p>
+            </div>
+            <div class="event-grid-4">
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Generative AI Studio">
+                    <div class="event-card-body">
+                        <div class="meta">SEP 2026 · WORKSHOP</div>
+                        <h4>Generative AI Studio</h4>
+                        <p>Explore diffusion models and prompt-based image generation with hands-on labs.</p>
+                        <button class="btn-outline" data-modal-title="Generative AI Studio" data-modal-meta="SEP 2026 · WORKSHOP" data-modal-date="September 12, 2026 · 10:00 AM - 4:00 PM" data-modal-desc="An immersive workshop diving into the world of generative AI. Participants will explore Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and the latest diffusion models. The hands-on lab includes using Stable Diffusion to generate custom artwork, understanding prompt engineering, and fine-tuning models on personal datasets. We'll also cover ethical considerations and potential applications in art, design, and content creation." data-modal-duration="6 hours" data-modal-level="Intermediate" data-modal-capacity="20 seats" data-modal-tags="Generative AI, Diffusion Models, Stable Diffusion, Prompt Engineering">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Kaggle Sprint Challenge">
+                    <div class="event-card-body">
+                        <div class="meta">OCT 2026 · COMPETITION</div>
+                        <h4>Kaggle Sprint Challenge</h4>
+                        <p>Compete in a friendly Kaggle-style competition with real-world dataset.</p>
+                        <button class="btn-outline" data-modal-title="Kaggle Sprint Challenge" data-modal-meta="OCT 2026 · COMPETITION" data-modal-date="October 5-11, 2026 · 1 week" data-modal-desc="A week-long competition where participants build predictive models on a real-world dataset. This sprint-style challenge simulates a Kaggle competition environment, complete with a leaderboard, evaluation metrics (F1 score, AUC-ROC), and a final presentation round. The dataset will be revealed on day one, and participants will have one week to iterate on their models. Top performers will present their approach and win prizes including books, subscription vouchers, and exclusive interview opportunities with partner companies." data-modal-duration="7 days" data-modal-level="All levels" data-modal-capacity="Unlimited (teams of 1-3)" data-modal-tags="Competition, Kaggle, Machine Learning, Data Science">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="AIS Annual Conference">
+                    <div class="event-card-body">
+                        <div class="meta">NOV 2026 · CONFERENCE</div>
+                        <h4>AIS Annual Conference</h4>
+                        <p>Keynotes, workshops, and networking with AI enthusiasts and professionals.</p>
+                        <button class="btn-outline" data-modal-title="AIS Annual Conference" data-modal-meta="NOV 2026 · CONFERENCE" data-modal-date="November 20-21, 2026 · 9:00 AM - 6:00 PM" data-modal-desc="Our flagship event of the year! The AIS Annual Conference features two full days of inspiring keynotes from industry leaders, hands-on workshops, a poster fair showcasing member projects, and a career fair with leading AI companies. Topics include the latest breakthroughs in large language models, AI for healthcare, autonomous systems, and the future of work. Don't miss the networking lunch and the opportunity to connect with fellow AI enthusiasts and professionals." data-modal-duration="2 days" data-modal-level="All levels" data-modal-capacity="200 attendees" data-modal-tags="Conference, Keynotes, Workshops, Networking, Career">View details</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="NLP Workshop">
+                    <div class="event-card-body">
+                        <div class="meta">DEC 2026 · WORKSHOP</div>
+                        <h4>NLP from Scratch</h4>
+                        <p>Build a text classification pipeline using transformers and Hugging Face.</p>
+                        <button class="btn-outline" data-modal-title="NLP from Scratch" data-modal-meta="DEC 2026 · WORKSHOP" data-modal-date="December 3, 2026 · 1:00 PM - 5:30 PM" data-modal-desc="A comprehensive workshop on modern NLP techniques. Participants will build a complete text classification pipeline from scratch, starting with data preprocessing and tokenization, then implementing transformer-based models using Hugging Face's Transformers library. We'll cover fine-tuning BERT for custom tasks, handling imbalanced datasets, and deploying the model as a simple API. The workshop concludes with a mini-project where you can apply your learning to a real-world text classification problem." data-modal-duration="4.5 hours" data-modal-level="Intermediate to Advanced" data-modal-capacity="25 seats" data-modal-tags="NLP, Transformers, BERT, Hugging Face, Text Classification">View details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="eventModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="modalCloseBtn">✕</button>
+            <h2 id="modalTitle">Event title</h2>
+            <div class="modal-meta" id="modalMeta">META</div>
+            <div class="modal-date" id="modalDate">Date &amp; Time</div>
+            <div class="modal-description" id="modalDesc">Description goes here.</div>
+            <div class="modal-details-grid">
+                <div class="modal-detail-item">
+                    <span class="label">Duration</span>
+                    <span class="value" id="modalDuration">—</span>
+                </div>
+                <div class="modal-detail-item">
+                    <span class="label">Level</span>
+                    <span class="value" id="modalLevel">—</span>
+                </div>
+                <div class="modal-detail-item">
+                    <span class="label">Capacity</span>
+                    <span class="value" id="modalCapacity">—</span>
+                </div>
+                <div class="modal-detail-item">
+                    <span class="label">Status</span>
+                    <span class="value" id="modalStatus">—</span>
+                </div>
+            </div>
+            <div class="modal-tags" id="modalTags"></div>
+        </div>
+    </div>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

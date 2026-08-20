@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Home | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Artificial Intelligence Society (AIS) student front-end website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body class="home-page">
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/ai-ambient.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">ARTIFICIAL INTELLIGENCE SOCIETY</div>
+                <h1>BUILD THE<br>FUTURE</h1>
+                <p>Explore artificial intelligence through practical projects, workshops, peer learning and innovation challenges designed for curious students.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#content">Explore Page ↓</a>
+                    <a class="btn btn-secondary" href="join.html">Join AIS</a>
+                </div>
+            </div>
+            <div class="hero-art">
+                <img
+                    src="https://images.unsplash.com/photo-1772235231771-f17980e811e4?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"
+                    alt="Developer working with code across multiple computer screens"
+                >
+            </div>
+        </div>
+    </header>
+
+    <section class="fv2-home-hero" aria-labelledby="fv2HeroTitle">
+        <div class="fv2-hero-grid" aria-hidden="true"></div>
+
+        <div class="fv2-hero-inner">
+            <div class="fv2-hero-glass">
+                <div class="fv2-eyebrow">ARTIFICIAL INTELLIGENCE SOCIETY</div>
+
+                <h1 id="fv2HeroTitle" class="fv2-hero-title">
+                    EXPLORE.<br>
+                    LEARN.<br>
+                    CREATE.<br>
+                    INNOVATE.
+                </h1>
+
+                <p class="fv2-hero-description">
+                    A student-driven space to discover Artificial Intelligence, build Machine Learning
+                    projects, practise Prompt Engineering and turn ideas into meaningful technology.
+                </p>
+
+                <div class="fv2-hero-actions">
+                    <a href="ai.html" class="fv2-btn-primary">
+                        EXPLORE AI <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="join.html" class="fv2-btn-secondary">JOIN THE CLUB</a>
+                </div>
+
+                <div class="fv2-hero-stats" aria-label="AIS statistics">
+                    <div class="fv2-hero-stat"><strong>10+</strong><span>Projects</span></div>
+                    <div class="fv2-hero-stat"><strong>8+</strong><span>Workshops</span></div>
+                    <div class="fv2-hero-stat"><strong>100+</strong><span>Members</span></div>
+                </div>
+            </div>
+
+            <div class="fv2-hero-mascot">
+                <div class="fv2-mascot-tech-ring fv2-mascot-ring-one" aria-hidden="true"></div>
+                <div class="fv2-mascot-tech-ring fv2-mascot-ring-two" aria-hidden="true"></div>
+
+                <div class="fv2-mascot-status">
+                    <span class="fv2-status-dot" aria-hidden="true"></span>
+                    AIS SYSTEM ONLINE
+                </div>
+
+                <img src="assets/images/ai-mascot.png"
+                     alt="Artificial Intelligence Society mascot"
+                     class="fv2-hero-mascot-img">
+
+                <div class="fv2-mascot-welcome-box">
+                    <div class="fv2-welcome-symbol"><i class="bi bi-stars" aria-hidden="true"></i></div>
+                    <div class="fv2-welcome-text">
+                        <span class="fv2-welcome-label">WELCOME TO</span>
+                        <strong>Artificial Intelligence Society!</strong>
+                        <small>Explore · Learn · Create · Innovate</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="content">
+
+        <div class="fv2-home-sections">
+
+            <section class="section">
+
+                <div class="container">
+
+                    <div class="section-head reveal">
+
+                        <div class="eyebrow">
+
+                            DISCOVER THE COMMUNITY
+
+                        </div>
+
+                        <h2 class="section-title">
+
+                            WHAT WE
+
+                            <span class="gradient-text">
+
+                                BUILD TOGETHER
+
+                            </span>
+
+                        </h2>
+
+                        <p class="section-copy">
+
+                            AIS connects learning with practice.
+                            Members explore core AI topics,
+                            collaborate on projects and join activities
+                            designed to strengthen technical and
+                            creative skills.
+
+                        </p>
+
+                    </div>
+
+                    <div class="card-grid">
+
+                        <article
+                            class="feature-card reveal">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-robot"></i>
+
+                            </div>
+
+                            <div
+                                class="feature-visual
+                                       ai-network">
+
+                                <span
+                                    class="network-line
+                                           line-a">
+                                </span>
+
+                                <span
+                                    class="network-line
+                                           line-b">
+                                </span>
+
+                                <span
+                                    class="network-line
+                                           line-c">
+                                </span>
+
+                                <span
+                                    class="network-line
+                                           line-d">
+                                </span>
+
+                                <span
+                                    class="network-node
+                                           node-one">
+                                </span>
+
+                                <span
+                                    class="network-node
+                                           node-two">
+                                </span>
+
+                                <span
+                                    class="network-node
+                                           node-three">
+                                </span>
+
+                                <span
+                                    class="network-node
+                                           node-four">
+                                </span>
+
+                                <span
+                                    class="network-node
+                                           node-five">
+                                </span>
+
+                                <div class="visual-caption">
+
+                                    <i class="bi bi-cpu"></i>
+
+                                    <span>
+
+                                        Neural Intelligence
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                01 / LEARN
+
+                            </span>
+
+                            <h3>
+
+                                Artificial Intelligence
+
+                            </h3>
+
+                            <p>
+
+                                Understand AI concepts, capabilities,
+                                real-world applications and responsible
+                                use through interactive content.
+
+                            </p>
+
+                            <a
+                                href="ai.html"
+                                class="link">
+
+                                OPEN AI HUB
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+                        <article
+                            class="feature-card reveal">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-diagram-3-fill"></i>
+
+                            </div>
+
+                            <div
+                                class="feature-visual
+                                       ml-visual">
+
+                                <div class="ml-grid-lines"></div>
+
+                                <div class="ml-bars">
+
+                                    <span class="index-inline-style-1"></span>
+
+                                    <span class="index-inline-style-2"></span>
+
+                                    <span class="index-inline-style-3"></span>
+
+                                    <span class="index-inline-style-4"></span>
+
+                                    <span class="index-inline-style-5"></span>
+
+                                </div>
+
+                                <svg
+                                    class="ml-curve"
+                                    viewBox="0 0 260 100"
+                                    preserveAspectRatio="none">
+
+                                    <path
+                                        d="M5,84 C45,70 62,78 92,57 C125,34 147,48 174,28 C199,10 224,18 255,8"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        stroke-linecap="round">
+                                    </path>
+
+                                </svg>
+
+                                <div class="visual-caption">
+
+                                    <i class="bi bi-graph-up-arrow"></i>
+
+                                    <span>
+
+                                        Learn From Data
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                02 / BUILD
+
+                            </span>
+
+                            <h3>
+
+                                Machine Learning
+
+                            </h3>
+
+                            <p>
+
+                                Explore student projects in prediction,
+                                classification, computer vision and
+                                intelligent recommendations.
+
+                            </p>
+
+                            <a
+                                href="#projects"
+                                class="link">
+
+                                VIEW PROJECTS
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+                        <article
+                            class="feature-card reveal">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-chat-left-text-fill"></i>
+
+                            </div>
+
+                            <div
+                                class="feature-visual
+                                       prompt-visual">
+
+                                <div class="prompt-window">
+
+                                    <div class="prompt-window-top">
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                    </div>
+
+                                    <div
+                                        class="prompt-line
+                                               prompt-one">
+
+                                        <i class="bi bi-stars"></i>
+
+                                        <span>
+
+                                            Generate a creative idea
+
+                                        </span>
+
+                                    </div>
+
+                                    <div
+                                        class="prompt-line
+                                               prompt-two">
+
+                                        <i class="bi bi-arrow-return-right"></i>
+
+                                        <span class="typing-text">
+
+                                            Refining prompt...
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="visual-caption">
+
+                                    <i class="bi bi-chat-square-dots"></i>
+
+                                    <span>
+
+                                        Prompt → Create
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                03 / CREATE
+
+                            </span>
+
+                            <h3>
+
+                                Prompt Engineering
+
+                            </h3>
+
+                            <p>
+
+                                Learn how structured prompts can improve
+                                the quality, accuracy and creativity of
+                                generative AI outputs.
+
+                            </p>
+
+                            <a
+                                href="#workshops"
+                                class="link">
+
+                                EXPLORE WORKSHOPS
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="spotlight" id="projects">
+
+                <div class="container">
+
+                    <div class="section-head reveal">
+
+                        <div class="eyebrow">
+                            PROJECT OVERVIEW
+                        </div>
+
+                        <h2 class="section-title">
+                            BUILDING
+                            <span class="gradient-text">
+                                REAL AI SOLUTIONS
+                            </span>
+                        </h2>
+
+                        <p class="section-copy">
+                            Explore AI projects developed by members of the
+                            Artificial Intelligence Society and discover the
+                            technologies, ideas and contributors behind each project.
+                        </p>
+
+                    </div>
+
+                    <div class="project-overview-grid">
+
+                        <article class="project-overview-card reveal">
+
+                            <div class="project-overview-image">
+                                <img
+                                    src="assets/images/chatbot-project.png"
+                                    alt="AI Specialization Chatbot">
+                            </div>
+
+                            <div class="project-overview-content">
+
+                                <div class="project-tags">
+                                    <span>AI</span>
+                                    <span>Chatbot</span>
+                                    <span>NLP</span>
+                                </div>
+
+                                <h3>
+                                    AI Learning Chatbot
+                                </h3>
+
+                                <p>
+                                    An AI-powered chatbot designed to help students
+                                    understand artificial intelligence concepts,
+                                    answer common questions and provide learning
+                                    guidance through natural language interaction.
+                                </p>
+
+                                <div class="project-contributors">
+
+                                    <div>
+                                        <strong>CONTRIBUTORS</strong>
+                                        <span>3 members</span>
+                                    </div>
+
+                                    <div class="contributor-list">
+                                        <span>Member 1</span>
+                                        <span>Member 2</span>
+                                        <span>Member 3</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-overview-card reveal">
+
+                            <div class="project-overview-image">
+                                <img
+                                    src="assets/images/rag-project.png"
+                                    alt="Document RAG Project">
+                            </div>
+
+                            <div class="project-overview-content">
+
+                                <div class="project-tags">
+                                    <span>AI</span>
+                                    <span>RAG</span>
+                                    <span>Documents</span>
+                                </div>
+
+                                <h3>
+                                    Document RAG Assistant
+                                </h3>
+
+                                <p>
+                                    A document question-answering system that combines
+                                    retrieval-augmented generation with semantic search
+                                    to help users obtain useful information from PDF
+                                    files and other documents.
+                                </p>
+
+                                <div class="project-contributors">
+
+                                    <div>
+                                        <strong>CONTRIBUTORS</strong>
+                                        <span>2 members</span>
+                                    </div>
+
+                                    <div class="contributor-list">
+                                        <span>Member 1</span>
+                                        <span>Member 2</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-overview-card reveal">
+
+                            <div class="project-overview-image">
+                                <img
+                                    src="assets/images/traffic-project.png"
+                                    alt="Traffic Sign Detection Project">
+                            </div>
+
+                            <div class="project-overview-content">
+
+                                <div class="project-tags">
+                                    <span>Computer Vision</span>
+                                    <span>OpenCV</span>
+                                    <span>Detection</span>
+                                </div>
+
+                                <h3>
+                                    Traffic Sign Detection
+                                </h3>
+
+                                <p>
+                                    A computer vision project that detects traffic
+                                    signs from road images using colour segmentation,
+                                    image processing and shape-based detection
+                                    techniques.
+                                </p>
+
+                                <div class="project-contributors">
+
+                                    <div>
+                                        <strong>CONTRIBUTORS</strong>
+                                        <span>4 members</span>
+                                    </div>
+
+                                    <div class="contributor-list">
+                                        <span>Member 1</span>
+                                        <span>Member 2</span>
+                                        <span>Member 3</span>
+                                        <span>Member 4</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-overview-card reveal">
+
+                            <div class="project-overview-image">
+                                <img
+                                    src="assets/images/student-project.png"
+                                    alt="Student Performance Prediction">
+                            </div>
+
+                            <div class="project-overview-content">
+
+                                <div class="project-tags">
+                                    <span>Machine Learning</span>
+                                    <span>Prediction</span>
+                                    <span>Data</span>
+                                </div>
+
+                                <h3>
+                                    Student Performance Prediction
+                                </h3>
+
+                                <p>
+                                    A machine learning project that analyses student
+                                    information to identify useful patterns and
+                                    estimate academic performance using predictive
+                                    models.
+                                </p>
+
+                                <div class="project-contributors">
+
+                                    <div>
+                                        <strong>CONTRIBUTORS</strong>
+                                        <span>3 members</span>
+                                    </div>
+
+                                    <div class="contributor-list">
+                                        <span>Member 1</span>
+                                        <span>Member 2</span>
+                                        <span>Member 3</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+            <div class="project-more reveal">
+
+                <a href="ml-projects.html"
+                   class="learn-more-project">
+
+                    LEARN MORE PROJECT
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+                </div>
+
+            </section>
+
+            <section
+                class="section"
+                id="workshops">
+
+                <div class="container">
+
+                    <div class="section-head reveal">
+
+                        <div class="eyebrow">
+
+                            LEARN BY DOING
+
+                        </div>
+
+                        <h2 class="section-title">
+
+                            WORKSHOPS &
+
+                            <span class="gradient-text">
+
+                                EVENTS
+
+                            </span>
+
+                        </h2>
+
+                        <p class="section-copy">
+
+                            Hands-on sessions help members move from
+                            theory to practice while meeting students
+                            who share the same interests.
+
+                        </p>
+
+                    </div>
+
+                    <div class="card-grid">
+
+                        <article
+                            class="feature-card
+                                   reveal
+                                   workshop-card">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-terminal-fill"></i>
+
+                            </div>
+
+                            <div
+                                class="event-visual
+                                       model-lab">
+
+                                <div class="lab-code">
+
+                                    <span>
+
+                                        dataset.csv
+
+                                    </span>
+
+                                    <span>
+
+                                        model.fit(X, y)
+
+                                    </span>
+
+                                    <span>
+
+                                        accuracy: 0.92
+
+                                    </span>
+
+                                </div>
+
+                                <div class="model-pulse"></div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                WORKSHOP
+
+                            </span>
+
+                            <h3>
+
+                                Build Your First ML Model
+
+                            </h3>
+
+                            <p>
+
+                                Learn the workflow from data
+                                preparation to training and
+                                simple model evaluation.
+
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="feature-card
+                                   reveal
+                                   workshop-card">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-stars"></i>
+
+                            </div>
+
+                            <div
+                                class="event-visual
+                                       prompt-lab">
+
+                                <div class="prompt-demo">
+
+                                    <span class="prompt-chip">
+
+                                        ROLE
+
+                                    </span>
+
+                                    <span class="prompt-chip">
+
+                                        CONTEXT
+
+                                    </span>
+
+                                    <span class="prompt-chip">
+
+                                        TASK
+
+                                    </span>
+
+                                    <div class="prompt-result">
+
+                                        <i class="bi bi-stars"></i>
+
+                                        Better response generated
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                WORKSHOP
+
+                            </span>
+
+                            <h3>
+
+                                Prompt Engineering Lab
+
+                            </h3>
+
+                            <p>
+
+                                Compare prompt structures and
+                                learn how small changes can
+                                improve AI-generated results.
+
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="feature-card
+                                   reveal
+                                   workshop-card">
+
+                            <div class="feature-icon">
+
+                                <i class="bi bi-people-fill"></i>
+
+                            </div>
+
+                            <div
+                                class="event-visual
+                                       sharing-visual">
+
+                                <div class="avatar a1">
+
+                                    <i class="bi bi-person-fill"></i>
+
+                                </div>
+
+                                <div class="avatar a2">
+
+                                    <i class="bi bi-person-fill"></i>
+
+                                </div>
+
+                                <div class="avatar a3">
+
+                                    <i class="bi bi-person-fill"></i>
+
+                                </div>
+
+                                <span class="share-line l1"></span>
+
+                                <span class="share-line l2"></span>
+
+                                <span class="share-line l3"></span>
+
+                                <div class="idea-core">
+
+                                    <i class="bi bi-lightbulb-fill"></i>
+
+                                </div>
+
+                            </div>
+
+                            <span class="tag">
+
+                                COMMUNITY
+
+                            </span>
+
+                            <h3>
+
+                                AI Sharing Session
+
+                            </h3>
+
+                            <p>
+
+                                Discuss emerging AI ideas,
+                                student projects and current
+                                technology trends with the
+                                community.
+
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                    <div class="project-more reveal">
+                        <a href="workshop.html" class="learn-more-project">
+                            LEARN MORE WORKSHOP
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section
+                class="challenge"
+                id="challenge">
+
+                <div class="container">
+
+                    <div
+                        class="challenge-box
+                               glass
+                               reveal">
+
+                        <div>
+
+                            <div class="eyebrow">
+
+                                INNOVATION CHALLENGE
+
+                            </div>
+
+                            <h2>
+
+                                TURN IDEAS INTO
+
+                                <span class="gradient-text">
+
+                                    INTELLIGENT SOLUTIONS
+
+                                </span>
+
+                            </h2>
+
+                            <p>
+
+                                Form a team, identify a real
+                                problem and design a practical
+                                solution using AI, Machine
+                                Learning or automation.
+
+                            </p>
+
+                            <div class="hero-actions">
+
+                                <a
+                                    href="join.html"
+                                    class="btn-primary">
+
+                                    JOIN AIS
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-side">
+
+                            <div class="mini">
+
+                                <i class="bi bi-lightbulb-fill"></i>
+
+                                <strong>
+
+                                    Create
+
+                                </strong>
+
+                                <span>
+
+                                    Develop original ideas
+
+                                </span>
+
+                            </div>
+
+                            <div class="mini">
+
+                                <i class="bi bi-people-fill"></i>
+
+                                <strong>
+
+                                    Collaborate
+
+                                </strong>
+
+                                <span>
+
+                                    Work as a team
+
+                                </span>
+
+                            </div>
+
+                            <div class="mini">
+
+                                <i class="bi bi-code-slash"></i>
+
+                                <strong>
+
+                                    Build
+
+                                </strong>
+
+                                <span>
+
+                                    Prototype solutions
+
+                                </span>
+
+                            </div>
+
+                            <div class="mini">
+
+                                <i class="bi bi-trophy-fill"></i>
+
+                                <strong>
+
+                                    Achieve
+
+                                </strong>
+
+                                <span>
+
+                                    Showcase outcomes
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <section class="section">
+            <div class="section-head reveal">
+                <div class="section-label">START HERE</div>
+                <h2>One club.<br>Many pathways.</h2>
+                <p>Move from first principles to practical prototypes through a connected learning journey.</p>
+            </div>
+            <div class="grid grid-4 reveal">
+                <div class="card tilt-card">
+                    <div class="stat">01</div>
+                    <h3>Understand AI</h3>
+                    <p>Learn core ideas behind AI, machine learning, LLMs, evaluation and responsible use.</p>
+                </div>
+                <div class="card tilt-card">
+                    <div class="stat">02</div>
+                    <h3>Build Projects</h3>
+                    <p>Turn concepts into small working systems and portfolio-ready experiments.</p>
+                </div>
+                <div class="card tilt-card">
+                    <div class="stat">03</div>
+                    <h3>Join Workshops</h3>
+                    <p>Practice prompting, model evaluation, prototyping and team problem solving.</p>
+                </div>
+                <div class="card tilt-card">
+                    <div class="stat">04</div>
+                    <h3>Take Challenges</h3>
+                    <p>Use randomized quizzes and innovation briefs to test and review what you understand.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="media-split reveal">
+                <div>
+                    <div class="section-label">VISUAL LEARNING</div>
+                    <h2>Ideas become<br>systems.</h2>
+                    <p class="lead-copy">Learn through visual explanations, guided project pathways and interactive practice that turn ideas into skills you can apply.</p>
+                    <div class="chips">
+                        <span class="pill">Animated UI</span>
+                        <span class="pill">Local video</span>
+                        <span class="pill">Interactive practice</span>
+                        <span class="pill">Saved progress</span>
+                    </div>
+                </div>
+                <figure class="media-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=max&amp;w=1400&amp;q=85"
+                        data-fallback="assets/graphics/ai-network.svg"
+                        alt="Technology circuit board used as a visual for AI systems"
+                    >
+                    <figcaption class="media-caption">
+                        <div class="mini">AI SYSTEMS</div>
+                        <strong>From signals and data to useful decisions.</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="grid grid-3 reveal">
+                <a class="card resource-link" href="ai.html">
+                    <div>
+                        <div class="mini">Learning Path</div>
+                        <h3>AI Introduction</h3>
+                        <p>Core concepts, terminology and responsible AI foundations.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+                <a class="card resource-link" href="ml-projects.html">
+                    <div>
+                        <div class="mini">Project Lab</div>
+                        <h3>ML Projects</h3>
+                        <p>Starter ideas with goals, inputs, outputs and evaluation tasks.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+                <a class="card resource-link" href="profile.html">
+                    <div>
+                        <div class="mini">Member History</div>
+                        <h3>Profile Dashboard</h3>
+                        <p>Review workshop attendance, event history and answered practice questions.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

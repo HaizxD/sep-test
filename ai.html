@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Hub | Artificial Intelligence Society (AIS)</title>
+  <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+        <span>AIS</span> Artificial Intelligence Society
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai.html" class="active">AI Hub</a></li>
+        <li><a href="ml-projects.html">ML Projects</a></li>
+        <li><a href="workshop.html">Workshops</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="ai.html">AI Hub</a>
+    <a href="ml-projects.html">ML Projects</a>
+    <a href="workshop.html">Workshops</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="events.html">Events</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+    <a href="profile.html">Profile</a>
+  </div>
+
+  <section class="ai-hero">
+    <video class="ai-hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+      <source src="assets/video/ai.mp4" type="video/mp4">
+    </video>
+    <div class="ambient-one"></div>
+    <div class="ambient-two"></div>
+    <div class="hero-container">
+      <div class="ai-hero-layout">
+        <div class="title-glass">
+          <div class="hero-label">AI & INNOVATION CLUB</div>
+          <h1 class="hero-title">ARTIFICIAL<br>INTELLIGENCE</h1>
+          <p class="hero-description">
+            Learn how machines think, learn, and decide. Explore core concepts,
+            real-world applications, benefits, and challenges of AI.
+          </p>
+          <a href="#ai-learning" class="hero-button">EXPLORE AI <span>↓</span></a>
+        </div>
+
+        <div class="ai-orbit-visual" aria-label="Animated AI processing graphic showing data, learning, and decisions">
+          <div class="ai-orbit ai-orbit-outer" aria-hidden="true">
+            <span class="ai-orbit-dot dot-one"></span>
+            <span class="ai-orbit-dot dot-two"></span>
+            <span class="ai-orbit-dot dot-three"></span>
+          </div>
+          <div class="ai-orbit ai-orbit-inner" aria-hidden="true">
+            <span class="ai-orbit-dot dot-four"></span>
+          </div>
+
+          <div class="ai-cpu-core" aria-hidden="true">
+            <i class="bi bi-cpu-fill"></i>
+          </div>
+
+          <div class="ai-orbit-label ai-data-label">
+            <i class="bi bi-database-fill" aria-hidden="true"></i>
+            <span>DATA</span>
+          </div>
+          <div class="ai-orbit-label ai-learn-label">
+            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+            <span>LEARN</span>
+          </div>
+          <div class="ai-orbit-label ai-decide-label">
+            <i class="bi bi-bullseye" aria-hidden="true"></i>
+            <span>DECIDE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="learning-section" id="ai-learning">
+    <div class="section-heading">
+      <div class="section-label">AI LEARNING CENTRE</div>
+      <h2>EXPLORE ARTIFICIAL<br>INTELLIGENCE</h2>
+      <p>Explore each topic to build a clearer understanding of AI, from core ideas and everyday uses to benefits, limitations and responsible development.</p>
+    </div>
+
+    <div class="learning-tabs">
+      <button class="learning-tab active" data-tab="what-ai"><i class="bi bi-question-circle-fill"></i> <span><small>01</small> What is AI?</span></button>
+      <button class="learning-tab" data-tab="types-ai"><i class="bi bi-diagram-3-fill"></i> <span><small>02</small> Types</span></button>
+      <button class="learning-tab" data-tab="applications-ai"><i class="bi bi-grid-fill"></i> <span><small>03</small> Applications</span></button>
+      <button class="learning-tab" data-tab="daily-ai"><i class="bi bi-house-heart-fill"></i> <span><small>04</small> Daily Life</span></button>
+      <button class="learning-tab" data-tab="benefits-ai"><i class="bi bi-check-circle-fill"></i> <span><small>05</small> Benefits</span></button>
+      <button class="learning-tab" data-tab="challenges-ai"><i class="bi bi-exclamation-triangle-fill"></i> <span><small>06</small> Challenges</span></button>
+    </div>
+
+    <div class="learning-content">
+
+      <div class="topic-panel active" id="what-ai">
+        <div class="panel-heading">
+          <span>01 / INTRODUCTION</span>
+          <h3>What is Artificial Intelligence?</h3>
+          <p>AI enables machines to perform tasks that normally require human intelligence: learning, reasoning, understanding language, and decision-making.</p>
+        </div>
+        <div class="two-col-grid">
+          <div class="image-card" data-modal="what-ai-core">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="AI concept" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Core Concept</span>
+              <h4>What is AI?</h4>
+              <p>AI systems use algorithms, data, and computational techniques to discover patterns and make decisions.</p>
+              <div class="badge-group"><span>Machine Learning</span><span>NLP</span><span>Computer Vision</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="what-ai-how">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80" alt="AI robot" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Simple Definition</span>
+              <h4>How AI Works</h4>
+              <p>Artificial Intelligence enables machines to analyse information, learn from patterns, and perform tasks.</p>
+              <div class="badge-group"><span>Data</span><span>Learning</span><span>Results</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-panel" id="types-ai">
+        <div class="panel-heading">
+          <span>02 / TYPES OF AI</span>
+          <h3>Types of Artificial Intelligence</h3>
+          <p>Narrow AI (exists), General AI (theoretical), Super AI (hypothetical).</p>
+        </div>
+        <div class="image-card-grid">
+          <div class="image-card" data-modal="types-narrow">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="Narrow AI" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">01 • Currently Exists</span>
+              <h4>Narrow AI</h4>
+              <p>Designed to perform specific tasks. Most AI systems today belong to this category.</p>
+              <div class="badge-group"><span>Recommendation</span><span>Chatbots</span><span>Image Recognition</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="types-general">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="General AI" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">02 • Theoretical</span>
+              <h4>General AI</h4>
+              <p>AI capable of understanding and performing a wide range of intellectual tasks like a human.</p>
+              <div class="badge-group"><span>Human-like</span><span>Adaptive</span><span>Research</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="types-super">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Super AI" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">03 • Hypothetical</span>
+              <h4>Super AI</h4>
+              <p>AI that would exceed human intellectual capabilities in many areas.</p>
+              <div class="badge-group"><span>Advanced</span><span>Creative</span><span>Future</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-panel" id="applications-ai">
+        <div class="panel-heading">
+          <span>03 / REAL-WORLD APPLICATIONS</span>
+          <h3>Artificial Intelligence in the Real World</h3>
+          <p>AI is already used in many systems and services that people interact with daily.</p>
+        </div>
+        <div class="image-card-grid">
+          <div class="image-card" data-modal="app-navigation">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Navigation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Navigation</span>
+              <h4>Intelligent Navigation</h4>
+              <p>Traffic prediction and route recommendation using machine learning.</p>
+              <div class="badge-group"><span>Google Maps</span><span>Prediction</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-recommendation">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Recommendations" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Entertainment</span>
+              <h4>Streaming Recommendations</h4>
+              <p>Personalised movie and music suggestions based on user behaviour.</p>
+              <div class="badge-group"><span>Netflix</span><span>Spotify</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-translation">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80" alt="Translation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Language</span>
+              <h4>Machine Translation</h4>
+              <p>AI translates between languages considering context and meaning.</p>
+              <div class="badge-group"><span>Google Translate</span><span>NLP</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-medical">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Medical" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Healthcare</span>
+              <h4>AI-Assisted Medical Imaging</h4>
+              <p>AI analyses X-rays and CT scans to assist medical professionals.</p>
+              <div class="badge-group"><span>X-ray</span><span>Computer Vision</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-finance">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" alt="Finance" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Finance</span>
+              <h4>Fraud Detection</h4>
+              <p>Analyses transaction patterns to identify suspicious activities.</p>
+              <div class="badge-group"><span>Banking</span><span>Anomaly Detection</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-face">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Smart Devices" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Smart Devices</span>
+              <h4>Face Recognition</h4>
+              <p>AI analyses facial characteristics for user authentication.</p>
+              <div class="badge-group"><span>Smartphone</span><span>Security</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-smarthome">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Smart Home" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Smart Home</span>
+              <h4>Smart Home Automation</h4>
+              <p>AI controls lighting, temperature, and security based on user habits.</p>
+              <div class="badge-group"><span>IoT</span><span>Automation</span><span>Energy</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="app-autonomous">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Autonomous Vehicle" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">Transportation</span>
+              <h4>Autonomous Vehicles</h4>
+              <p>Self-driving cars use AI for perception, decision-making, and navigation.</p>
+              <div class="badge-group"><span>Computer Vision</span><span>Deep Learning</span><span>LiDAR</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-panel" id="daily-ai">
+        <div class="panel-heading">
+          <span>04 / AI IN DAILY LIFE</span>
+          <h3>Artificial Intelligence Around You</h3>
+          <p>AI has become part of many technologies used in everyday life, often without users noticing.</p>
+        </div>
+        <div class="image-card-grid">
+          <div class="image-card" data-modal="daily-phone">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Smartphone" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">01</span>
+              <h4>Smartphones</h4>
+              <p>Facial recognition, predictive typing, voice assistance, photo processing.</p>
+              <div class="badge-group"><span>Face ID</span><span>Voice Assistant</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-maps">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Navigation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">02</span>
+              <h4>Navigation</h4>
+              <p>Traffic analysis, route suggestions, journey time estimation.</p>
+              <div class="badge-group"><span>Maps</span><span>Traffic</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-streaming">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Entertainment" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">03</span>
+              <h4>Entertainment</h4>
+              <p>Video and music recommendations based on previous interactions.</p>
+              <div class="badge-group"><span>Streaming</span><span>Recommendations</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-search">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Search" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">04</span>
+              <h4>Search Engines</h4>
+              <p>Understanding queries and ranking information for relevant results.</p>
+              <div class="badge-group"><span>Google</span><span>Ranking</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-chatbot">
+            <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=800&q=80" alt="Chatbot" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">05</span>
+              <h4>Virtual Assistants & Chatbots</h4>
+              <p>Natural language processing for text and voice interactions.</p>
+              <div class="badge-group"><span>ChatGPT</span><span>NLP</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-email">
+            <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80" alt="Email" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">06</span>
+              <h4>Email Filtering</h4>
+              <p>Automatic classification of unwanted or suspicious emails.</p>
+              <div class="badge-group"><span>Spam</span><span>Classification</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-social">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80" alt="Social Media" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">07</span>
+              <h4>Social Media</h4>
+              <p>AI curates feeds, suggests content, detects harmful posts, and personalises ads.</p>
+              <div class="badge-group"><span>Algorithm</span><span>Moderation</span><span>Personalisation</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="daily-ecommerce">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="E-commerce" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">08</span>
+              <h4>E-commerce Shopping</h4>
+              <p>AI powers personalised product recommendations and visual search.</p>
+              <div class="badge-group"><span>Recommendations</span><span>Visual Search</span><span>Chatbots</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-panel" id="benefits-ai">
+        <div class="panel-heading">
+          <span>05 / BENEFITS OF AI</span>
+          <h3>Benefits of Artificial Intelligence</h3>
+          <p>AI can provide several advantages when designed and used appropriately.</p>
+        </div>
+        <div class="image-card-grid">
+          <div class="image-card" data-modal="benefit-automation">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80" alt="Automation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">01</span>
+              <h4>Automation</h4>
+              <p>AI automates repetitive tasks, allowing focus on creativity and judgement.</p>
+              <div class="badge-group"><span>Efficiency</span><span>Productivity</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-efficiency">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Efficiency" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">02</span>
+              <h4>Increased Efficiency</h4>
+              <p>AI processes large amounts of information quickly and accurately.</p>
+              <div class="badge-group"><span>Speed</span><span>Data Processing</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-analysis">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">03</span>
+              <h4>Data Analysis</h4>
+              <p>AI identifies patterns in large datasets that are difficult to find manually.</p>
+              <div class="badge-group"><span>Insights</span><span>Patterns</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-accuracy">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Accuracy" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">04</span>
+              <h4>Improved Accuracy</h4>
+              <p>AI provides consistent results and reduces repetitive human error.</p>
+              <div class="badge-group"><span>Precision</span><span>Consistency</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-availability">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Availability" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">05</span>
+              <h4>Continuous Availability</h4>
+              <p>AI systems can provide services 24/7, such as customer support.</p>
+              <div class="badge-group"><span>24/7</span><span>Support</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-personalisation">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Personalisation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">06</span>
+              <h4>Personalisation</h4>
+              <p>AI analyses preferences to provide personalised recommendations.</p>
+              <div class="badge-group"><span>Custom</span><span>Recommendations</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-scalability">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Scalability" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">07</span>
+              <h4>Scalability</h4>
+              <p>AI systems can scale to handle growing amounts of work without significant additional cost.</p>
+              <div class="badge-group"><span>Growth</span><span>Cloud</span><span>Infrastructure</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="benefit-innovation">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Innovation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">08</span>
+              <h4>Driving Innovation</h4>
+              <p>AI enables new products, services, and research breakthroughs across industries.</p>
+              <div class="badge-group"><span>R&D</span><span>Breakthroughs</span><span>Future</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-panel" id="challenges-ai">
+        <div class="panel-heading">
+          <span>06 / CHALLENGES OF AI</span>
+          <h3>Challenges of Artificial Intelligence</h3>
+          <p>Responsible development requires careful consideration of technical, ethical, and social issues.</p>
+        </div>
+        <div class="image-card-grid">
+          <div class="image-card" data-modal="challenge-privacy">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="Privacy" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">01</span>
+              <h4>Privacy & Data Security</h4>
+              <p>AI systems may process large amounts of personal information.</p>
+              <div class="badge-group"><span>Security</span><span>Privacy</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-bias">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="Bias" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">02</span>
+              <h4>Bias & Fairness</h4>
+              <p>AI can produce unfair results when training data contains bias.</p>
+              <div class="badge-group"><span>Fairness</span><span>Inclusion</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-employment">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" alt="Employment" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">03</span>
+              <h4>Changes to Employment</h4>
+              <p>Automation may change responsibilities in some occupations.</p>
+              <div class="badge-group"><span>Future of Work</span><span>Skills</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-transparency">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Transparency" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">04</span>
+              <h4>Transparency</h4>
+              <p>Some AI systems are difficult to interpret and understand.</p>
+              <div class="badge-group"><span>Explainability</span><span>Trust</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-security">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Security" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">05</span>
+              <h4>Security & Misuse</h4>
+              <p>AI can be misused to support harmful activities or create misinformation.</p>
+              <div class="badge-group"><span>Safety</span><span>Ethics</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          
+          <div class="image-card" data-modal="challenge-responsibility">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Human Responsibility" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">06</span>
+              <h4>Human Responsibility</h4>
+              <p>Human judgement remains important for significant decisions.</p>
+              <div class="badge-group"><span>Oversight</span><span>Accountability</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-energy">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80" alt="Energy" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">07</span>
+              <h4>Energy Consumption</h4>
+              <p>Training and running large AI models requires significant computational resources.</p>
+              <div class="badge-group"><span>Sustainability</span><span>Carbon Footprint</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+          <div class="image-card" data-modal="challenge-regulation">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Regulation" loading="lazy">
+            <div class="overlay"></div>
+            <div class="card-content">
+              <span class="tag">08</span>
+              <h4>Regulatory Compliance</h4>
+              <p>AI development must navigate evolving laws, standards, and ethical guidelines.</p>
+              <div class="badge-group"><span>Governance</span><span>Compliance</span><span>Law</span></div>
+              <span class="details-hint">Click for Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="ai-journey">
+    <div class="journey-heading">
+      <span>HOW INTELLIGENCE IS CREATED</span>
+      <h2>The AI Journey</h2>
+      <p>A simplified view of how information can be transformed into an intelligent result.</p>
+    </div>
+    <div class="journey-track">
+      <div class="journey-step">
+        <span>01</span>
+        <div><i class="bi bi-database-fill"></i></div>
+        <h4>Data</h4>
+        <p>Information is collected.</p>
+      </div>
+      <div class="journey-arrow"><i class="bi bi-arrow-right"></i></div>
+      <div class="journey-step">
+        <span>02</span>
+        <div><i class="bi bi-gear-fill"></i></div>
+        <h4>Processing</h4>
+        <p>Information is analysed.</p>
+      </div>
+      <div class="journey-arrow"><i class="bi bi-arrow-right"></i></div>
+      <div class="journey-step">
+        <span>03</span>
+        <div><i class="bi bi-cpu-fill"></i></div>
+        <h4>Learning</h4>
+        <p>Useful patterns are identified.</p>
+      </div>
+      <div class="journey-arrow"><i class="bi bi-arrow-right"></i></div>
+      <div class="journey-step">
+        <span>04</span>
+        <div><i class="bi bi-bullseye"></i></div>
+        <h4>Result</h4>
+        <p>A prediction or decision is produced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-project-cta">
+    <div>
+      <span>APPLY WHAT YOU LEARN</span>
+      <h2>Explore AI Through Real Projects</h2>
+      <p>Discover how Artificial Intelligence and Machine Learning concepts can be applied to practical real-world problems.</p>
+      <a href="ml-projects.html">View AI / ML Projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </section>
+
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+  <div class="modal" id="aiModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div class="modal-icon" id="modalIcon">🤖</div>
+      <h2 id="modalTitle">AI Topic</h2>
+      <p class="modal-description" id="modalDescription"></p>
+      <div class="modal-section">
+        <h4>DETAILED OVERVIEW</h4>
+        <p id="modalOverview"></p>
+      </div>
+      <div class="modal-section">
+        <h4>KEY CONCEPTS & TECHNOLOGIES</h4>
+        <div class="modal-tech-list" id="modalTechnologies"></div>
+      </div>
+      <div class="modal-section">
+        <h4>WHAT YOU WILL LEARN</h4>
+        <p id="modalLearning"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Challenges | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="Randomized AI and LLM practice challenges from the Artificial Intelligence Society (AIS).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/challenges.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html" class="active">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/ai-ambient.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">AIS INNOVATION CHALLENGE</div>
+                <h1>TEST. REVIEW.<br>IMPROVE.</h1>
+                <p>Test your AI and LLM knowledge with a fresh five-question challenge, detailed explanations and XP rewards as you improve.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#challengeTest">Start Challenge ↓</a>
+                    <a class="btn btn-secondary" href="profile.html">Open Profile</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/graphics/challenge-grid.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section" id="challengeTest">
+            <div class="challenge-layout reveal">
+                <aside class="card challenge-list">
+                    <div class="section-label">RANDOM TEST</div>
+                    <h3>How it works</h3>
+                    <p>Five questions are randomly selected from the question bank for every new test.</p>
+                    <div class="divider"></div>
+                    <p><strong>Challenge yourself and aim high.</strong> Stronger results earn more XP and help you track your progress.</p>
+                    <div class="divider"></div>
+                    <div id="saveTarget" class="notice info"></div>
+                    <button class="btn btn-secondary challenges-inline-style-1" id="newTest" type="button">Generate New Test ↻</button>
+                    <div class="divider"></div>
+                    <div class="mini">TEST PROGRESS</div>
+                    <div class="progress challenges-inline-style-2"><span id="testProgress"></span></div>
+                </aside>
+
+                <div class="card">
+                    <div class="mini" id="challengeMeta"></div>
+                    <div class="question" id="question"></div>
+                    <div id="options"></div>
+                    <div id="feedback" class="notice challenges-inline-style-3" aria-live="polite"></div>
+                    <button class="btn btn-primary challenges-inline-style-4" id="nextQuestion" type="button">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">PRACTICE HISTORY</div>
+                <h2>Review every<br>answer.</h2>
+                <p>Review past attempts to revisit each question, compare your answer with the correct one and learn from the explanation.</p>
+            </div>
+            <div id="history" class="history-list reveal"></div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">AIS FAQ ASSISTANT</div>
+                <h2>Common questions,<br>instant answers.</h2>
+                <p>Explore quick answers to common questions about challenges, scoring, XP, review history and how to get the most from each practice session.</p>
+            </div>
+
+            <div class="card assistant-shell reveal">
+                <div class="assistant-mascot">
+                    <img src="assets/images/voidoll-mascot.png" alt="AIS club mascot">
+                </div>
+                <div>
+                    <div class="section-label">ASK THE AIS MASCOT</div>
+                    <h3>Challenge FAQ</h3>
+                    <div class="faq-buttons" id="faqButtons">
+                        <button class="btn btn-secondary" type="button" data-faq="random">How are questions chosen?</button>
+                        <button class="btn btn-secondary" type="button" data-faq="answers">Do I need to log in to take the random test?</button>
+                        <button class="btn btn-secondary" type="button" data-faq="history">Where is my history saved?</button>
+                        <button class="btn btn-secondary" type="button" data-faq="review">Can I review wrong answers?</button>
+                        <button class="btn btn-secondary" type="button" data-faq="xp">How do I earn XP?</button>
+                    </div>
+                    <div class="notice info faq-answer" id="faqAnswer" aria-live="polite">Select a question above.</div>
+
+                    <div class="divider"></div>
+                    <button class="btn btn-secondary" id="feedbackToggle" type="button">Leave Challenge Feedback</button>
+                    <form class="feedback-form" id="challengeFeedbackForm">
+                        <div class="form-group">
+                            <label for="feedbackCategory">Feedback category</label>
+                            <select class="field" id="feedbackCategory" required>
+                                <option value="">Choose a category</option>
+                                <option>Question quality</option>
+                                <option>Difficulty</option>
+                                <option>Answer explanation</option>
+                                <option>Interface</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group challenges-inline-style-5">
+                            <label for="feedbackText">Your feedback</label>
+                            <textarea class="field" id="feedbackText" maxlength="800" required placeholder="Example: The explanation for the RAG question helped, but I would like more intermediate questions."></textarea>
+                            <span class="field-help">Share ideas that could make future challenges clearer, more useful and more engaging.</span>
+                        </div>
+                        <button class="btn btn-primary challenges-inline-style-6" type="submit">Save Feedback</button>
+                        <div id="feedbackFormStatus" class="form-message" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact">
+            <div class="section-head reveal">
+                <div class="section-label">INNOVATION BRIEFS</div>
+                <h2>Turn knowledge<br>into prototypes.</h2>
+            </div>
+            <div class="grid grid-2 reveal">
+                <div class="card tilt-card">
+                    <h3>Campus FAQ Assistant</h3>
+                    <p>Prototype a source-grounded assistant that helps new students find information while avoiding unsupported answers.</p>
+                    <a class="btn btn-secondary challenges-inline-style-7" href="ml-projects.html">Open Related Project →</a>
+                </div>
+                <div class="card tilt-card">
+                    <h3>Study Feedback Explorer</h3>
+                    <p>Design a system that turns anonymized reflection notes into useful themes without exposing unnecessary private data.</p>
+                    <a class="btn btn-secondary challenges-inline-style-8" href="ml-projects.html">Open Related Project →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/challenges.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>

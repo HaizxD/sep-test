@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/ais-favicon.png">
+    <title>Profile | Artificial Intelligence Society (AIS)</title>
+    <meta name="description" content="AIS member learning profile for activities, projects, challenges and skill progress.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="css/site-footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img class="logo-mascot" src="assets/images/ais-mascot-icon.png" alt="AIS mascot icon">
+                <span>AIS</span> Artificial Intelligence Society
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI Hub</a></li>
+                <li><a href="ml-projects.html">ML Projects</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Hub</a>
+        <a href="ml-projects.html">ML Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <header class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/profile.mp4" type="video/mp4">
+        </video>
+        <div class="hero-inner">
+            <div class="hero-card">
+                <div class="eyebrow">AIS MEMBER ACCESS</div>
+                <h1>YOUR LEARNING<br>PROFILE</h1>
+                <p>Sign in to review your club activities, completed projects, practice attempts, answer explanations, skill progress and XP.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#content">Open Profile ↓</a>
+                    <a class="btn btn-secondary" href="challenges.html">Take a Challenge</a>
+                </div>
+            </div>
+            <div class="hero-art">
+                <img
+                    src="https://images.unsplash.com/photo-1759884247447-beea12f8a207?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"
+                    alt="Student coding on a laptop"
+                >
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section">
+            <div id="loginPanel" class="login-wrap form-card reveal">
+                <div class="section-label">MEMBER LOGIN</div>
+                <h2 class="profile-inline-style-1">Member<br>Access</h2>
+                <p class="lead-copy profile-inline-style-2">Choose a member account to explore your learning profile, track progress and review the activities you have completed.</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input class="field" id="username" required autocomplete="username" placeholder="e.g. user1">
+                    </div>
+                    <div class="form-group profile-inline-style-3">
+                        <label for="password">Password</label>
+                        <input class="field" type="password" id="password" required autocomplete="current-password" placeholder="e.g. 1111">
+                    </div>
+                    <button class="btn btn-primary profile-inline-style-4" type="submit">Login →</button>
+                    <div id="loginMessage" class="form-message" aria-live="polite"></div>
+                </form>
+                <div class="divider"></div>
+                <div class="mini">Member Accounts</div>
+                <table class="credential-table">
+                    <thead>
+                        <tr><th>User</th><th>Password</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>user1</td><td>1111</td></tr>
+                        <tr><td>user2</td><td>2222</td></tr>
+                        <tr><td>user3</td><td>3333</td></tr>
+                        <tr><td>user4</td><td>4444</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="profilePanel" class="profile-wrap">
+                <div class="grid grid-3">
+                    <div class="card reveal profile-inline-style-5">
+                        <div class="profile-header">
+                            <div class="avatar" id="avatar"></div>
+                            <div class="profile-inline-style-6">
+                                <div class="mini" id="profileUser"></div>
+                                <h3 class="profile-inline-style-7" id="profileName"></h3>
+                                <p id="profileRole"></p>
+                                <div class="chips">
+                                    <span class="pill" id="profileLevel"></span>
+                                    <span class="pill" id="profileXP"></span>
+                                </div>
+                                <div class="xp-track">
+                                    <div class="xp-row">
+                                        <span id="xpLevelLabel">Level progress</span>
+                                        <span id="xpLevelValue">0 / 250 XP</span>
+                                    </div>
+                                    <div class="progress"><span id="xpLevelBar"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-metrics profile-metrics-4">
+                            <div class="metric-box"><strong id="metricActivities">0</strong><span class="mini">Activities</span></div>
+                            <div class="metric-box"><strong id="metricProjects">0</strong><span class="mini">Projects</span></div>
+                            <div class="metric-box"><strong id="metricQuestions">0</strong><span class="mini">Questions reviewed</span></div>
+                            <div class="metric-box"><strong id="metricAverage">0%</strong><span class="mini">Practice average</span></div>
+                        </div>
+
+                        <div class="divider"></div>
+                        <h3>Skill Progress</h3>
+                        <p class="field-help">Skills are displayed as levels out of 100. Completing relevant tasks increases the matching skill level.</p>
+                        <div id="skills"></div>
+                    </div>
+
+                    <div class="card reveal">
+                        <div class="section-label">EXPERIENCE SYSTEM</div>
+                        <h3>Difficulty affects XP</h3>
+                        <p>Higher-proficiency tasks award more experience. Skill increases are capped at Level 100.</p>
+                        <div class="xp-explainer">
+                            <div class="xp-chip"><strong>Beginner</strong><br>+20 XP activity</div>
+                            <div class="xp-chip"><strong>Intermediate</strong><br>+35 XP activity</div>
+                            <div class="xp-chip"><strong>Advanced</strong><br>+50 XP activity</div>
+                        </div>
+                        <div class="note-box">Challenge questions award XP individually: Beginner 4, Intermediate 7 and Advanced 10 for a correct answer. Incorrect answers award 1 practice XP.</div>
+                        <a class="btn btn-secondary profile-inline-style-8" href="ml-projects.html">Complete a Project</a>
+                        <a class="btn btn-secondary profile-inline-style-9" href="workshop.html">Complete a Workshop</a>
+                        <button class="btn btn-danger profile-inline-style-10" id="logoutBtn" type="button">Logout</button>
+                    </div>
+
+                    <div class="card reveal profile-inline-style-11">
+                        <div class="section-label">ACTIVITY HISTORY</div>
+                        <h3>Events, Workshops &amp; Projects</h3>
+                        <p>Recorded club activities appear here with difficulty and XP when available.</p>
+                        <div class="profile-inline-style-12" id="activityHistory"></div>
+                    </div>
+
+                    <div class="card reveal profile-inline-style-13">
+                        <div class="section-label">PRACTICE REVIEW</div>
+                        <h3>Questions, Answers &amp; Explanations</h3>
+                        <p>Open a past attempt to compare your answer with the correct one and revisit the explanation for each question.</p>
+                        <div id="profileHistory" class="history-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Artificial Intelligence Society (AIS)</strong><br>
+                <span>Learn. Build. Experiment. Innovate.</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="join.html">Join</a>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                </div>
+                <span>© <span data-year></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/site-footer.js"></script>
+</body>
+</html>
